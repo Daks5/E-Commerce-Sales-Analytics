@@ -207,6 +207,17 @@ def detach_sql_citations(text):
     return ''.join(parts)
 
 
+def normalize_currency_display(message):
+    """Apply consistent thousands separators after numeric evidence validation.
+
+    Preserve digits, sign, decimals and scale words; this changes typography,
+    not the amount. For example, a model's ₹31,980,39 becomes ₹3,198,039.
+    """
+    return re.sub(r'₹\s*(-?)(\d(?:[\d,]*\d)?)(\.\d+)?',
+                  lambda match: '₹' + match[1] + format(int(match[2].replace(',', '')), ',')
+                                + (match[3] or ''), message)
+
+
 class GeminiAssistant:
     def __init__(self, settings: Settings, service: QueryService, client=None, retriever=None):
         self.settings, self.service = settings, service
@@ -274,7 +285,8 @@ class GeminiAssistant:
                 text = (document_fallback([]) if retrieval_calls else
                     'Please specify which sales metric, period or comparison you want. Numerical answers require a verified database query.')
                 used, kind = [], 'clarification'
-            return Answer(question, text, evidence, kind, api_calls, input_tokens, output_tokens, used, retrieval_calls)
+            return Answer(question, normalize_currency_display(text), evidence, kind,
+                          api_calls, input_tokens, output_tokens, used, retrieval_calls)
 
         for round_number in range(min(3, request_budget)):
             if api_calls >= request_budget:
