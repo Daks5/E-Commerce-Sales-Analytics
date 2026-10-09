@@ -3,6 +3,9 @@
 A resume project combining Python data cleaning, a MySQL star schema, Power BI
 reports, and a Streamlit assistant with Gemini function calling and document RAG.
 
+**[Open the live demo](https://ecommerce-sales-analytics-daks5.streamlit.app/)**
+— Query Explorer is public; ask the project author for the Gemini demo code.
+
 The source is the public [Kaggle e-commerce sales dataset](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data).
 The Amazon snapshot covers 31 March–29 June 2022. Six exact duplicate copies
 are excluded, leaving 128,969 analytical order lines. Shipped value is a sales

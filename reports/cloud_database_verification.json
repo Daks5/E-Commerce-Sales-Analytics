@@ -1,0 +1,21 @@
+{
+  "read_only": true,
+  "analyses": {
+    "overview": true,
+    "order_cancellation_and_aov": true,
+    "monthly_trend": true,
+    "comparable_may_june": true,
+    "category_performance": true,
+    "category_decline_contribution": true,
+    "state_performance": true,
+    "fulfillment_operations": true,
+    "status_distribution": true,
+    "b2b_segment": true,
+    "sku_rank_within_category": true,
+    "daily_running_value": true,
+    "promotion_association": true,
+    "data_quality": true
+  },
+  "knowledge_passages": 17,
+  "passed": true
+}
