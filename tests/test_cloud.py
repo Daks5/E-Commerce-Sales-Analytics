@@ -75,8 +75,8 @@ def test_cloud_app_chat_is_public_and_keeps_usage_limits(monkeypatch):
     assert not ui.exception
     assert not ui.chat_input[0].disabled
     assert len(ui.selectbox) == 5  # Public explorer controls remain present.
-    assert len(ui.text_input) == 0  # No access-code form.
-    assert all(button.label != 'Unlock AI questions' for button in ui.button)
+    assert len(ui.text_input) == 0
+    assert len(ui.button) == 1  # Only the Query Explorer submit button.
     assert calls == []
     ui.chat_input[0].set_value('Explain missing amounts').run()
     assert not ui.exception

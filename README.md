@@ -3,8 +3,8 @@
 A resume project combining Python data cleaning, a MySQL star schema, Power BI
 reports, and a Streamlit assistant with Gemini function calling and document RAG.
 
-**[Open the live demo](https://ecommerce-sales-analytics-daks5.streamlit.app/)**
-— Query Explorer is public; ask the project author for the Gemini demo code.
+**[Open the live website](https://ecommerce-sales-analytics-daks5.streamlit.app/)**
+— Ask Gemini questions directly or explore the reviewed SQL analyses.
 
 The source is the public [Kaggle e-commerce sales dataset](https://www.kaggle.com/datasets/thedevastator/unlock-profits-with-e-commerce-sales-data).
 The Amazon snapshot covers 31 March–29 June 2022. Six exact duplicate copies
@@ -21,7 +21,7 @@ Amazon policies.
   with inspectable citations. The checked-in index contains 17 passages.
 - Explore the same SQL analyses without using Gemini in Query Explorer.
 
-![AI analyst](reports/screenshots_assistant/final_project_check.png)
+![Live analytics assistant](reports/screenshots_assistant/cloud_public_chat.png)
 
 ## Architecture
 
@@ -55,17 +55,16 @@ The remote database must use the provider's CA certificate and a SELECT-only
 reader. TLS issuer and hostname verification are required in cloud mode.
 
 Query Explorer and Gemini chat are public. Gemini needs a configured API key.
-There are browser-session and shared
-process hourly allowances; the latter resets when the application restarts.
-These are demo usage controls, not provider billing limits. Configure provider
-quotas separately.
+There are browser-session and shared process hourly allowances; the latter
+resets when the application restarts. These are usage controls, not provider
+billing limits. Configure provider quotas separately.
 
 ## Validation and delivery status
 
 The finished local project passed 103 automated tests and live SQL/RAG checks.
 That report is in `reports/final_project_audit.json` and describes the local
-project. Deployment-specific preflight results are saved separately in
-`reports/cloud_preflight_tests.xml`. A public URL is only considered complete
-after cloud database import, secret setup and online verification.
+project. Current deployment-specific regression results are saved in
+`reports/cloud_preflight_tests.xml`. Online database, SQL, RAG and restart
+verification is recorded in `reports/cloud_deployment_check.json`.
 
 ![Power BI sales report](reports/screenshots_dark/01_sales_pulse.png)
