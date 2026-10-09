@@ -1,0 +1,1305 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"ProjectRoot\", \"Sales\", \"Date\", \"Product\", \"Geography\", \"Status\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "date.month_label": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "month_label"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Reporting month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "geography.ship_state": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Geography",
+                    "ConceptualProperty": "ship_state"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Shipping region": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "product.category": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Product",
+                    "ConceptualProperty": "category"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Product category": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Category": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.cancelled_line_rate": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Cancelled Line Rate"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Cancelled lines": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Cancel %": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.customer_segment": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Customer Segment"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Customer type": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.fulfillment": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "fulfillment"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Fulfillment": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.june_value_crore": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "June Value (crore)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "June · Cr": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.may_value_crore": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "May Value (crore)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "May · Cr": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.missing_amount_lines": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Missing Amount Lines"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Missing amounts": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.net_decline_contribution": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Net Decline Contribution"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Net change share": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.observed_lines": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Observed Lines"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Lines": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.recorded_amount": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Recorded Amount"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Recorded amount": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.sales_value_crore": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Sales Value (crore)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Value · Cr": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sales.value_change_lakh": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Sales",
+                    "ConceptualProperty": "Value Change (lakh)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Change · L": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "status.status_group": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Status",
+                    "ConceptualProperty": "status_group"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Status group": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "ProjectRoot",
+        "expression": "\"C:/Users/Daksh Bansal/Documents/ChatGPT/data analytics\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "6a76031a-a6d8-4efd-abae-dc4275a02d28"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "41343afb-e87d-5b9b-a2cd-7e3aeb7ea924",
+        "fromColumn": "date_key",
+        "fromTable": "Sales",
+        "toColumn": "date_key",
+        "toTable": "Date"
+      },
+      {
+        "name": "1ec65661-4fa1-5ee9-b839-014bfc56aa6e",
+        "fromColumn": "product_key",
+        "fromTable": "Sales",
+        "toColumn": "product_key",
+        "toTable": "Product"
+      },
+      {
+        "name": "b8d618a8-f052-5f10-a98d-ce8f9b177a32",
+        "fromColumn": "geography_key",
+        "fromTable": "Sales",
+        "toColumn": "geography_key",
+        "toTable": "Geography"
+      },
+      {
+        "name": "7bd018d0-889f-5b22-a777-68837703a96e",
+        "fromColumn": "status_key",
+        "fromTable": "Sales",
+        "toColumn": "status_key",
+        "toTable": "Status"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Sales",
+        "columns": [
+          {
+            "name": "line_id",
+            "dataType": "int64",
+            "isHidden": true,
+            "isKey": true,
+            "lineageTag": "0d574b80-5909-42f2-b05d-890d47ecff8a",
+            "sourceColumn": "line_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "source_index",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "2ea964f1-75d3-4d1e-8df8-ea0e030daacc",
+            "sourceColumn": "source_index",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_id",
+            "dataType": "string",
+            "lineageTag": "e4ad5b15-7f7d-4d56-8ca1-705256d59b15",
+            "sourceColumn": "order_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "624f97c6-833c-47d3-8bca-66437211ccd7",
+            "sourceColumn": "date_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "product_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "8c0e6360-3c60-4193-89e0-702944cc5749",
+            "sourceColumn": "product_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "geography_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "453324c7-0063-43f4-a956-627cda798483",
+            "sourceColumn": "geography_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "63beb259-9af1-4def-a546-2ec40b4f14c3",
+            "sourceColumn": "status_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fulfillment",
+            "dataType": "string",
+            "lineageTag": "f1609556-d271-438a-897e-2aa871357e73",
+            "sourceColumn": "fulfillment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sales_channel",
+            "dataType": "string",
+            "lineageTag": "3c0f87e4-f8c2-4662-94b8-90e74214a037",
+            "sourceColumn": "sales_channel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "shipping_service",
+            "dataType": "string",
+            "lineageTag": "d0af6a4d-23a1-419b-8c77-263cafbd9dee",
+            "sourceColumn": "shipping_service",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "courier_status",
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "aa9f48c1-6806-4449-8c4f-a7788395fad1",
+            "sourceColumn": "courier_status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "asin",
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "6dfda966-01c8-4bb0-af93-2d874cdef1f6",
+            "sourceColumn": "asin",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantity",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "44630536-73a2-40d5-ad7c-7af5394cce90",
+            "sourceColumn": "quantity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "currency",
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "9c0b07de-dd77-4b37-a16b-191c361bf342",
+            "sourceColumn": "currency",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "amount",
+            "dataType": "decimal",
+            "isHidden": true,
+            "lineageTag": "355ffd1d-a448-4088-8a5b-805b2d456106",
+            "sourceColumn": "amount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "amount_minor",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "13d0ad0f-01a1-4387-b569-86e5535c5268",
+            "sourceColumn": "amount_minor",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_b2b",
+            "dataType": "int64",
+            "lineageTag": "a83e75ac-9e0b-4d30-a95b-6a0b0528edc4",
+            "sourceColumn": "is_b2b",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "has_promotion",
+            "dataType": "int64",
+            "lineageTag": "540edad1-cfc5-43c9-b48d-565e926e169f",
+            "sourceColumn": "has_promotion",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fulfilled_by",
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "807d5fcb-b0b1-4b60-a03c-43c9cb1e4b63",
+            "sourceColumn": "fulfilled_by",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_duplicate_record",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "57b2c9e5-a5df-418e-942e-c46fa15e9496",
+            "sourceColumn": "is_duplicate_record",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "amount_missing",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "7b5f7a43-9966-4dfc-98dc-5145e8991820",
+            "sourceColumn": "amount_missing",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "zero_quantity",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "2fa53a3f-3da8-48e0-a02f-47bbafcd3279",
+            "sourceColumn": "zero_quantity",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_sales_eligible",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "8078e639-3ad6-466a-a28a-a3abc96d43da",
+            "sourceColumn": "is_sales_eligible",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_unvalued_shipped",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "dbc1b030-3234-4c13-b002-63517431bc70",
+            "sourceColumn": "is_unvalued_shipped",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_valuation_complete",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "4382aa51-826d-46dd-8c72-f942ba138aaa",
+            "sourceColumn": "order_valuation_complete",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_courier_conflict",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "d74737c7-45ab-42cf-b531-8ba114ae2cbc",
+            "sourceColumn": "status_courier_conflict",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "geography_missing",
+            "dataType": "int64",
+            "isHidden": true,
+            "lineageTag": "ba82ff72-83af-4d6a-a217-092ea80fa9b3",
+            "sourceColumn": "geography_missing",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Customer Segment",
+            "dataType": "string",
+            "expression": "IF(Sales[is_b2b] = 1, \"Business (B2B)\", \"Retail\")",
+            "lineageTag": "3450be43-d46a-4205-8848-35581572499a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "cbfae4c3-6063-461d-9bf9-1df2165a4319",
+        "measures": [
+          {
+            "name": "Observed Lines",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "COUNTROWS(Sales)",
+            "formatString": "#,0",
+            "lineageTag": "25268455-e7eb-47cb-9e7b-0283332f56c6"
+          },
+          {
+            "name": "Observed Orders",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "DISTINCTCOUNT(Sales[order_id])",
+            "formatString": "#,0",
+            "lineageTag": "9ffd8c96-09cc-4d06-82ab-3e4150cf24cd"
+          },
+          {
+            "name": "Shipped Sales Value",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "CALCULATE(SUM(Sales[amount_minor]), Sales[is_sales_eligible] = 1) / 100",
+            "formatString": "₹#,0.00",
+            "lineageTag": "f288167f-d9df-40d4-9657-278b311f7b7f"
+          },
+          {
+            "name": "Valued Shipped Orders",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "CALCULATE(DISTINCTCOUNT(Sales[order_id]), Sales[is_sales_eligible] = 1)",
+            "formatString": "#,0",
+            "lineageTag": "5af3342e-ae34-4be9-b0f2-6d5acf89cc25"
+          },
+          {
+            "name": "Valued Shipped Units",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "CALCULATE(SUM(Sales[quantity]), Sales[is_sales_eligible] = 1)",
+            "formatString": "#,0",
+            "lineageTag": "6a25d44a-18a7-449b-8409-8ea656bf0fc7"
+          },
+          {
+            "name": "Complete Valued Orders",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "CALCULATE([Valued Shipped Orders], Sales[order_valuation_complete] = 1)",
+            "formatString": "#,0",
+            "lineageTag": "3f37a07b-8c91-417f-a8f1-937ff6c32321"
+          },
+          {
+            "name": "Complete Order Value",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "CALCULATE([Shipped Sales Value], Sales[order_valuation_complete] = 1)",
+            "formatString": "₹#,0.00",
+            "lineageTag": "e56b74d7-c29f-4079-82cf-7b1818cf226a"
+          },
+          {
+            "name": "Complete Order AOV",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "DIVIDE([Complete Order Value], [Complete Valued Orders])",
+            "formatString": "₹#,0.00",
+            "lineageTag": "86e19cc7-48b5-4ba1-962b-849df8e208d2"
+          },
+          {
+            "name": "Cancelled Lines",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "CALCULATE(COUNTROWS(Sales), 'Status'[status] = \"Cancelled\")",
+            "formatString": "#,0",
+            "lineageTag": "acb4441a-449b-4fd5-a0e3-1afa4d4dc83c"
+          },
+          {
+            "name": "Cancelled Line Rate",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "DIVIDE([Cancelled Lines], [Observed Lines])",
+            "formatString": "0.0%",
+            "lineageTag": "ffb978a9-33fa-4d3a-9fb1-3b7eb5876b6f"
+          },
+          {
+            "name": "Returned Lines",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "CALCULATE(COUNTROWS(Sales), 'Status'[status_group] = \"Returned or returning\")",
+            "formatString": "#,0",
+            "lineageTag": "26fb0cd2-c8bc-4fbe-88a6-1686c06bab73"
+          },
+          {
+            "name": "Returned Line Rate",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "DIVIDE([Returned Lines], [Observed Lines])",
+            "formatString": "0.0%",
+            "lineageTag": "d271ce95-08c3-43b6-b259-9bdd9b797a6b"
+          },
+          {
+            "name": "Missing Amount Lines",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "SUM(Sales[amount_missing])",
+            "formatString": "#,0",
+            "lineageTag": "20ed9e91-cb2c-4c9f-b007-df94615559c8"
+          },
+          {
+            "name": "Missing Amount Rate",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "DIVIDE([Missing Amount Lines], [Observed Lines])",
+            "formatString": "0.0%",
+            "lineageTag": "96be7d01-013c-4572-b9bb-237f2078800c"
+          },
+          {
+            "name": "Unvalued Shipped Lines",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "SUM(Sales[is_unvalued_shipped])",
+            "formatString": "#,0",
+            "lineageTag": "b41c9dd5-0e66-4a4e-adfa-5c3c585729f8"
+          },
+          {
+            "name": "Courier Conflict Lines",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "SUM(Sales[status_courier_conflict])",
+            "formatString": "#,0",
+            "lineageTag": "27359f4f-4766-4932-a272-cd0d3eeb0137"
+          },
+          {
+            "name": "Recorded Amount",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Operations & Quality",
+            "expression": "SUM(Sales[amount_minor]) / 100",
+            "formatString": "₹#,0.00",
+            "lineageTag": "4fecbbfd-a672-4dfd-8664-a59a2de0185a"
+          },
+          {
+            "name": "May 1-29 Value",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[order_date] >= DATE(2022,5,1), 'Date'[order_date] <= DATE(2022,5,29))",
+            "formatString": "₹#,0.00",
+            "lineageTag": "930de356-261d-4c86-9ca4-f6207a091d4b"
+          },
+          {
+            "name": "June 1-29 Value",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[order_date] >= DATE(2022,6,1), 'Date'[order_date] <= DATE(2022,6,29))",
+            "formatString": "₹#,0.00",
+            "lineageTag": "94fea5ef-2992-4001-b6e7-1b28b765e8b6"
+          },
+          {
+            "name": "Comparable Value Change",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "[June 1-29 Value] - [May 1-29 Value]",
+            "formatString": "₹#,0.00",
+            "lineageTag": "5401d771-b130-4b38-9347-ba9192c97298"
+          },
+          {
+            "name": "Comparable Value Change Rate",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "DIVIDE([Comparable Value Change], [May 1-29 Value])",
+            "formatString": "0.0%",
+            "lineageTag": "dc8d4e51-58dd-4687-bcac-2eed50b552c9"
+          },
+          {
+            "name": "Product Value Share",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "DIVIDE([Shipped Sales Value], CALCULATE([Shipped Sales Value], REMOVEFILTERS(Product)))",
+            "formatString": "0.0%",
+            "lineageTag": "8a352244-1dc4-4028-9335-17a219aebbfa"
+          },
+          {
+            "name": "Cumulative Shipped Value",
+            "description": "See docs/metric_contract.md for inclusion rules and limitations.",
+            "displayFolder": "Sales",
+            "expression": "VAR LastObservedDate = MAX('Date'[order_date]) RETURN CALCULATE([Shipped Sales Value], FILTER(ALLSELECTED('Date'[order_date]), 'Date'[order_date] <= LastObservedDate))",
+            "formatString": "₹#,0.00",
+            "lineageTag": "83b3fb9a-ce3b-4e11-a141-b151612695ce"
+          },
+          {
+            "name": "Sales Value (crore)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "[Shipped Sales Value] / 10000000",
+            "formatString": "₹0.00\" Cr\"",
+            "lineageTag": "2dbfb3b7-8deb-4f18-841a-a5a759aadd29"
+          },
+          {
+            "name": "May Value (crore)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "[May 1-29 Value] / 10000000",
+            "formatString": "₹0.00\" Cr\"",
+            "lineageTag": "a6aeaa46-aa3c-4797-b3e2-f755c0bdb413"
+          },
+          {
+            "name": "June Value (crore)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "[June 1-29 Value] / 10000000",
+            "formatString": "₹0.00\" Cr\"",
+            "lineageTag": "2221f1f4-3250-4230-8f89-18318bd54186"
+          },
+          {
+            "name": "Value Change (lakh)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "[Comparable Value Change] / 100000",
+            "formatString": "+₹0.00\" L\";-₹0.00\" L\";₹0.00\" L\"",
+            "lineageTag": "8f19e768-6503-4645-a74c-058dd6d3457a"
+          },
+          {
+            "name": "May daily value",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR SelectedDays = VALUES('Date'[day_of_month]) RETURN CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[year] = 2022, 'Date'[month_number] = 5, 'Date'[day_of_month] <= 29, TREATAS(SelectedDays, 'Date'[day_of_month]))",
+            "formatString": "₹#,0",
+            "lineageTag": "bd67c99a-b9fa-4a80-b020-049635e7fb7b"
+          },
+          {
+            "name": "June daily value",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR SelectedDays = VALUES('Date'[day_of_month]) RETURN CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[year] = 2022, 'Date'[month_number] = 6, 'Date'[day_of_month] <= 29, TREATAS(SelectedDays, 'Date'[day_of_month]))",
+            "formatString": "₹#,0",
+            "lineageTag": "63861b5a-2a10-43f1-a687-c888a08f26fd"
+          },
+          {
+            "name": "Category decline (lakh)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Change = [Comparable Value Change] RETURN IF(ISINSCOPE(Product[category]), IF(Change < 0, Change / 100000), MIN(Change, 0) / 100000)",
+            "formatString": "₹0.00\" L\"",
+            "lineageTag": "b7207062-2082-458f-9eae-f6e7cf80aeda"
+          },
+          {
+            "name": "Category growth (lakh)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Change = [Comparable Value Change] RETURN IF(ISINSCOPE(Product[category]), IF(Change > 0, Change / 100000), MAX(Change, 0) / 100000)",
+            "formatString": "₹0.00\" L\"",
+            "lineageTag": "75a392bf-feaa-460d-be17-4e16c1bd5c3b"
+          },
+          {
+            "name": "Net Decline Contribution",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "DIVIDE([Comparable Value Change], CALCULATE([Comparable Value Change], REMOVEFILTERS(Product)))",
+            "formatString": "0.0%",
+            "lineageTag": "e921fb3c-439a-46ce-9861-1d383f81f7bf"
+          },
+          {
+            "name": "Leading Category",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Leaders = TOPN(1, ADDCOLUMNS(VALUES(Product[category]), \"Value\", [Shipped Sales Value]), [Value], DESC, Product[category], ASC) RETURN CONCATENATEX(Leaders, Product[category], \", \")",
+            "lineageTag": "84f9487a-5a0e-4cde-9140-6d7550b28ebd"
+          },
+          {
+            "name": "Leading Category Share",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Leaders = TOPN(1, ADDCOLUMNS(VALUES(Product[category]), \"Value\", [Shipped Sales Value]), [Value], DESC, Product[category], ASC) RETURN DIVIDE(SUMX(Leaders, [Value]), [Shipped Sales Value])",
+            "formatString": "0.0%",
+            "lineageTag": "abf7a214-5dd3-458d-b169-3b5d378ab834"
+          },
+          {
+            "name": "Leading State",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Leaders = TOPN(1, ADDCOLUMNS(VALUES(Geography[ship_state]), \"Value\", [Shipped Sales Value]), [Value], DESC, Geography[ship_state], ASC) RETURN CONCATENATEX(Leaders, Geography[ship_state], \", \")",
+            "lineageTag": "adf4cc8f-550e-4c18-ba75-9def87eed033"
+          },
+          {
+            "name": "Top Two Markets Share",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Leaders = TOPN(2, ADDCOLUMNS(VALUES(Geography[ship_state]), \"Value\", [Shipped Sales Value]), [Value], DESC, Geography[ship_state], ASC) RETURN DIVIDE(SUMX(Leaders, [Value]), [Shipped Sales Value])",
+            "formatString": "0.0%",
+            "lineageTag": "ef49bc0f-499c-4cd4-b0e7-fd23a94ff7e0"
+          },
+          {
+            "name": "Active Regions",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "COUNTROWS(FILTER(VALUES(Geography[ship_state]), [Observed Lines] > 0))",
+            "formatString": "#,0",
+            "lineageTag": "e4dfaa2f-8767-4cef-8a25-a1e03b47225c"
+          },
+          {
+            "name": "Top 10 Market Value (crore)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Position = RANKX(ALLSELECTED(Geography[ship_state]), [Shipped Sales Value], , DESC, DENSE) RETURN IF(Position <= 10, [Sales Value (crore)])",
+            "formatString": "₹0.00\" Cr\"",
+            "lineageTag": "88258fe2-928b-49c7-8337-bf7f685477dd"
+          },
+          {
+            "name": "Merchant Cancel Rate",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "CALCULATE([Cancelled Line Rate], REMOVEFILTERS(Sales[fulfillment]), Sales[fulfillment] = \"Merchant\")",
+            "formatString": "0.00%",
+            "lineageTag": "90ef89b7-c77c-4073-b2dd-0dfa218f9f6d"
+          },
+          {
+            "name": "Amazon Cancel Rate",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "CALCULATE([Cancelled Line Rate], REMOVEFILTERS(Sales[fulfillment]), Sales[fulfillment] = \"Amazon\")",
+            "formatString": "0.00%",
+            "lineageTag": "0f0591b4-c56e-46f9-828b-40aa7a795a62"
+          },
+          {
+            "name": "Fulfillment Gap (pp)",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "([Merchant Cancel Rate] - [Amazon Cancel Rate]) * 100",
+            "formatString": "0.00\" pp\"",
+            "lineageTag": "93d21ae5-ec55-4f93-b187-38495edc5110"
+          },
+          {
+            "name": "Amount Coverage",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "1 - [Missing Amount Rate]",
+            "formatString": "0.0%",
+            "lineageTag": "943c5571-c610-4918-87f7-e942ea7be0f4"
+          },
+          {
+            "name": "Shipped Orders Display",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "FORMAT([Valued Shipped Orders], \"#,0\")",
+            "lineageTag": "81ee26fd-b3b6-4955-9884-f16fb37cb74d"
+          },
+          {
+            "name": "Shipped Units Display",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "FORMAT([Valued Shipped Units], \"#,0\")",
+            "lineageTag": "5b2a8415-dfaa-4a79-80da-1d71a1a75057"
+          },
+          {
+            "name": "Top 5 Category Share",
+            "description": "Filter-aware display or decision measure. See docs/metric_contract.md and docs/dashboard_redesign.md.",
+            "displayFolder": "Dashboard • Decision Metrics",
+            "expression": "VAR Position = RANKX(ALLSELECTED(Product[category]), [Shipped Sales Value], , DESC, DENSE) RETURN IF(Position <= 5, [Product Value Share])",
+            "formatString": "0.0%",
+            "lineageTag": "f8c24010-1eb3-4e7a-9aca-267b8ce10c00"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Sales",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(ProjectRoot & \"/data/powerbi/fact_order_lines.csv\"), [Delimiter=\",\", Columns=27, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"line_id\", Int64.Type}, {\"source_index\", Int64.Type}, {\"order_id\", type text}, {\"date_key\", Int64.Type}, {\"product_key\", Int64.Type}, {\"geography_key\", Int64.Type}, {\"status_key\", Int64.Type}, {\"fulfillment\", type text}, {\"sales_channel\", type text}, {\"shipping_service\", type text}, {\"courier_status\", type text}, {\"asin\", type text}, {\"quantity\", Int64.Type}, {\"currency\", type text}, {\"amount\", Currency.Type}, {\"amount_minor\", Int64.Type}, {\"is_b2b\", Int64.Type}, {\"has_promotion\", Int64.Type}, {\"fulfilled_by\", type text}, {\"is_duplicate_record\", Int64.Type}, {\"amount_missing\", Int64.Type}, {\"zero_quantity\", Int64.Type}, {\"is_sales_eligible\", Int64.Type}, {\"is_unvalued_shipped\", Int64.Type}, {\"order_valuation_complete\", Int64.Type}, {\"status_courier_conflict\", Int64.Type}, {\"geography_missing\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "e627ab6c-dd94-40e9-af1e-d4d80d5c4577"
+          }
+        ],
+        "columns": [
+          {
+            "name": "order_date",
+            "dataType": "dateTime",
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "93151c73-79cd-481d-915b-0f7a78eb61d9",
+            "sourceColumn": "order_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "isKey": true,
+            "lineageTag": "fcb1bf32-3ffe-4142-9f4f-582ce395d33a",
+            "sourceColumn": "date_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "year",
+            "dataType": "int64",
+            "lineageTag": "ae1199bb-b8e2-4342-a35d-c9dc90b01a9b",
+            "sourceColumn": "year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "month_number",
+            "dataType": "int64",
+            "lineageTag": "770dd32d-4afc-4f62-ae8b-5fca023c3aa6",
+            "sourceColumn": "month_number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "month_key",
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "589d23b2-86cf-4c67-95f9-1ae927c533c7",
+            "sourceColumn": "month_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "month_start",
+            "dataType": "dateTime",
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "8bea96c8-f752-4b59-865f-02ddb9392f48",
+            "sourceColumn": "month_start",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "month_label",
+            "dataType": "string",
+            "lineageTag": "b55ef612-a275-4c26-b26c-c71d867e5a29",
+            "sortByColumn": "month_key",
+            "sourceColumn": "month_label",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "day_of_month",
+            "dataType": "int64",
+            "lineageTag": "a49bb125-ebd0-4bab-a240-35b4d37f67ad",
+            "sourceColumn": "day_of_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "day_name",
+            "dataType": "string",
+            "lineageTag": "ce283af9-43c5-4198-8eab-2ffdbec258d0",
+            "sourceColumn": "day_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "week_start",
+            "dataType": "dateTime",
+            "formatString": "dd MMM yyyy",
+            "lineageTag": "6d2bc1c5-ff31-459d-8990-c47b5f653e17",
+            "sourceColumn": "week_start",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_observed_date",
+            "dataType": "int64",
+            "lineageTag": "41fecbf6-c738-4974-a00c-18da6f461b1e",
+            "sourceColumn": "is_observed_date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "is_complete_month",
+            "dataType": "int64",
+            "lineageTag": "2e8bd97a-929f-4303-809e-bc60243aefe4",
+            "sourceColumn": "is_complete_month",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ef3e456a-470b-4e6b-a024-555d7747065a",
+        "partitions": [
+          {
+            "name": "Date",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(ProjectRoot & \"/data/powerbi/dim_date.csv\"), [Delimiter=\",\", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"order_date\", type date}, {\"date_key\", Int64.Type}, {\"year\", Int64.Type}, {\"month_number\", Int64.Type}, {\"month_key\", type text}, {\"month_start\", type date}, {\"month_label\", type text}, {\"day_of_month\", Int64.Type}, {\"day_name\", type text}, {\"week_start\", type date}, {\"is_observed_date\", Int64.Type}, {\"is_complete_month\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "columns": [
+          {
+            "name": "product_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "isKey": true,
+            "lineageTag": "726ebba0-785b-4cb3-abe2-3f9918153d43",
+            "sourceColumn": "product_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sku",
+            "dataType": "string",
+            "lineageTag": "37004c43-c2eb-4116-97f3-ed8235932147",
+            "sourceColumn": "sku",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "style",
+            "dataType": "string",
+            "lineageTag": "8a421d17-38b8-4a6c-98b4-fcee833cc267",
+            "sourceColumn": "style",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "category",
+            "dataType": "string",
+            "lineageTag": "00de8c47-b238-49db-a0f9-b7dad3071661",
+            "sourceColumn": "category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "size",
+            "dataType": "string",
+            "lineageTag": "23c2b19f-f61f-4fbc-bd70-d0e6af3a632e",
+            "sourceColumn": "size",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "asin_count",
+            "dataType": "int64",
+            "lineageTag": "af996c60-7b22-4814-9fd0-8332b1af33ec",
+            "sourceColumn": "asin_count",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a7b9a965-b601-4728-820d-4e46c33c79fd",
+        "partitions": [
+          {
+            "name": "Product",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(ProjectRoot & \"/data/powerbi/dim_product.csv\"), [Delimiter=\",\", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"product_key\", Int64.Type}, {\"sku\", type text}, {\"style\", type text}, {\"category\", type text}, {\"size\", type text}, {\"asin_count\", Int64.Type}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Geography",
+        "columns": [
+          {
+            "name": "geography_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "isKey": true,
+            "lineageTag": "b0c9cbfe-52f6-45de-814f-cf6d3bab6fd1",
+            "sourceColumn": "geography_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ship_city",
+            "dataType": "string",
+            "lineageTag": "0219d800-61b1-466e-8f52-b2e15be1b34b",
+            "sourceColumn": "ship_city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ship_state",
+            "dataType": "string",
+            "lineageTag": "42e98ab0-1151-4903-9abd-1f355145e180",
+            "sourceColumn": "ship_state",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "postal_code",
+            "dataType": "string",
+            "lineageTag": "85bb1418-0056-4800-b60d-38b95861b91c",
+            "sourceColumn": "postal_code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "lineageTag": "a183f960-9a8c-4212-8857-7e15fc7bca40",
+            "sourceColumn": "country",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "cfb6b23c-cbc4-433c-bd70-dab655ab919f",
+        "partitions": [
+          {
+            "name": "Geography",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(ProjectRoot & \"/data/powerbi/dim_geography.csv\"), [Delimiter=\",\", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"geography_key\", Int64.Type}, {\"ship_city\", type text}, {\"ship_state\", type text}, {\"postal_code\", type text}, {\"country\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Status",
+        "columns": [
+          {
+            "name": "status_key",
+            "dataType": "int64",
+            "isHidden": true,
+            "isKey": true,
+            "lineageTag": "4bf833e5-ed9e-4e2b-bacf-2a0535249121",
+            "sourceColumn": "status_key",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status",
+            "dataType": "string",
+            "lineageTag": "67c7889d-1b72-41b0-8b18-6fb22009dd33",
+            "sourceColumn": "status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_group",
+            "dataType": "string",
+            "lineageTag": "524512bf-4af5-4c45-b784-8dc0b6984876",
+            "sourceColumn": "status_group",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ca9ab17c-0634-4f2f-a4ca-63a5b5e47862",
+        "partitions": [
+          {
+            "name": "Status",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(ProjectRoot & \"/data/powerbi/dim_status.csv\"), [Delimiter=\",\", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    EmptyAsNull = Table.ReplaceValue(Headers, \"\", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),",
+                "    Typed = Table.TransformColumnTypes(EmptyAsNull, {{\"status_key\", Int64.Type}, {\"status\", type text}, {\"status_group\", type text}}, \"en-US\")",
+                "in",
+                "    Typed"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

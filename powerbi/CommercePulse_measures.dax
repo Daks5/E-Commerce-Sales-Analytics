@@ -1,0 +1,134 @@
+Observed Lines =
+COUNTROWS(Sales)
+
+Observed Orders =
+DISTINCTCOUNT(Sales[order_id])
+
+Shipped Sales Value =
+CALCULATE(SUM(Sales[amount_minor]), Sales[is_sales_eligible] = 1) / 100
+
+Valued Shipped Orders =
+CALCULATE(DISTINCTCOUNT(Sales[order_id]), Sales[is_sales_eligible] = 1)
+
+Valued Shipped Units =
+CALCULATE(SUM(Sales[quantity]), Sales[is_sales_eligible] = 1)
+
+Complete Valued Orders =
+CALCULATE([Valued Shipped Orders], Sales[order_valuation_complete] = 1)
+
+Complete Order Value =
+CALCULATE([Shipped Sales Value], Sales[order_valuation_complete] = 1)
+
+Complete Order AOV =
+DIVIDE([Complete Order Value], [Complete Valued Orders])
+
+Cancelled Lines =
+CALCULATE(COUNTROWS(Sales), 'Status'[status] = "Cancelled")
+
+Cancelled Line Rate =
+DIVIDE([Cancelled Lines], [Observed Lines])
+
+Returned Lines =
+CALCULATE(COUNTROWS(Sales), 'Status'[status_group] = "Returned or returning")
+
+Returned Line Rate =
+DIVIDE([Returned Lines], [Observed Lines])
+
+Missing Amount Lines =
+SUM(Sales[amount_missing])
+
+Missing Amount Rate =
+DIVIDE([Missing Amount Lines], [Observed Lines])
+
+Unvalued Shipped Lines =
+SUM(Sales[is_unvalued_shipped])
+
+Courier Conflict Lines =
+SUM(Sales[status_courier_conflict])
+
+Recorded Amount =
+SUM(Sales[amount_minor]) / 100
+
+May 1-29 Value =
+CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[order_date] >= DATE(2022,5,1), 'Date'[order_date] <= DATE(2022,5,29))
+
+June 1-29 Value =
+CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[order_date] >= DATE(2022,6,1), 'Date'[order_date] <= DATE(2022,6,29))
+
+Comparable Value Change =
+[June 1-29 Value] - [May 1-29 Value]
+
+Comparable Value Change Rate =
+DIVIDE([Comparable Value Change], [May 1-29 Value])
+
+Product Value Share =
+DIVIDE([Shipped Sales Value], CALCULATE([Shipped Sales Value], REMOVEFILTERS(Product)))
+
+Cumulative Shipped Value =
+VAR LastObservedDate = MAX('Date'[order_date]) RETURN CALCULATE([Shipped Sales Value], FILTER(ALLSELECTED('Date'[order_date]), 'Date'[order_date] <= LastObservedDate))
+
+Sales Value (crore) =
+[Shipped Sales Value] / 10000000
+
+Shipped Orders Display =
+FORMAT([Valued Shipped Orders], "#,0")
+
+Shipped Units Display =
+FORMAT([Valued Shipped Units], "#,0")
+
+Top 5 Category Share =
+VAR Position = RANKX(ALLSELECTED(Product[category]), [Shipped Sales Value], , DESC, DENSE) RETURN IF(Position <= 5, [Product Value Share])
+
+May Value (crore) =
+[May 1-29 Value] / 10000000
+
+June Value (crore) =
+[June 1-29 Value] / 10000000
+
+Value Change (lakh) =
+[Comparable Value Change] / 100000
+
+May daily value =
+VAR SelectedDays = VALUES('Date'[day_of_month]) RETURN CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[year] = 2022, 'Date'[month_number] = 5, 'Date'[day_of_month] <= 29, TREATAS(SelectedDays, 'Date'[day_of_month]))
+
+June daily value =
+VAR SelectedDays = VALUES('Date'[day_of_month]) RETURN CALCULATE([Shipped Sales Value], REMOVEFILTERS('Date'), 'Date'[year] = 2022, 'Date'[month_number] = 6, 'Date'[day_of_month] <= 29, TREATAS(SelectedDays, 'Date'[day_of_month]))
+
+Category decline (lakh) =
+VAR Change = [Comparable Value Change] RETURN IF(ISINSCOPE(Product[category]), IF(Change < 0, Change / 100000), MIN(Change, 0) / 100000)
+
+Category growth (lakh) =
+VAR Change = [Comparable Value Change] RETURN IF(ISINSCOPE(Product[category]), IF(Change > 0, Change / 100000), MAX(Change, 0) / 100000)
+
+Net Decline Contribution =
+DIVIDE([Comparable Value Change], CALCULATE([Comparable Value Change], REMOVEFILTERS(Product)))
+
+Leading Category =
+VAR Leaders = TOPN(1, ADDCOLUMNS(VALUES(Product[category]), "Value", [Shipped Sales Value]), [Value], DESC, Product[category], ASC) RETURN CONCATENATEX(Leaders, Product[category], ", ")
+
+Leading Category Share =
+VAR Leaders = TOPN(1, ADDCOLUMNS(VALUES(Product[category]), "Value", [Shipped Sales Value]), [Value], DESC, Product[category], ASC) RETURN DIVIDE(SUMX(Leaders, [Value]), [Shipped Sales Value])
+
+Leading State =
+VAR Leaders = TOPN(1, ADDCOLUMNS(VALUES(Geography[ship_state]), "Value", [Shipped Sales Value]), [Value], DESC, Geography[ship_state], ASC) RETURN CONCATENATEX(Leaders, Geography[ship_state], ", ")
+
+Top Two Markets Share =
+VAR Leaders = TOPN(2, ADDCOLUMNS(VALUES(Geography[ship_state]), "Value", [Shipped Sales Value]), [Value], DESC, Geography[ship_state], ASC) RETURN DIVIDE(SUMX(Leaders, [Value]), [Shipped Sales Value])
+
+Active Regions =
+COUNTROWS(FILTER(VALUES(Geography[ship_state]), [Observed Lines] > 0))
+
+Top 10 Market Value (crore) =
+VAR Position = RANKX(ALLSELECTED(Geography[ship_state]), [Shipped Sales Value], , DESC, DENSE) RETURN IF(Position <= 10, [Sales Value (crore)])
+
+Merchant Cancel Rate =
+CALCULATE([Cancelled Line Rate], REMOVEFILTERS(Sales[fulfillment]), Sales[fulfillment] = "Merchant")
+
+Amazon Cancel Rate =
+CALCULATE([Cancelled Line Rate], REMOVEFILTERS(Sales[fulfillment]), Sales[fulfillment] = "Amazon")
+
+Fulfillment Gap (pp) =
+([Merchant Cancel Rate] - [Amazon Cancel Rate]) * 100
+
+Amount Coverage =
+1 - [Missing Amount Rate]

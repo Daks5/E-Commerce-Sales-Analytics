@@ -1,0 +1,1449 @@
+{
+  "overview": [
+    {
+      "analytical_lines": 128969,
+      "observed_orders": 120378,
+      "shipped_sales_value": 69660658.0,
+      "valued_shipped_orders": 100227,
+      "valued_shipped_units": 107746.0,
+      "cancelled_lines": 18329.0,
+      "cancelled_line_pct": 14.2119,
+      "missing_amount_lines": 7792.0,
+      "unvalued_shipped_lines": 115.0
+    }
+  ],
+  "order_cancellation_and_aov": [
+    {
+      "orders": 120378,
+      "any_cancelled_orders": 17185.0,
+      "fully_cancelled_orders": 17185.0,
+      "partially_cancelled_orders": 0.0,
+      "complete_order_value": 69660658.0,
+      "complete_valued_orders": 100227.0,
+      "complete_order_aov": 695.02886448
+    }
+  ],
+  "monthly_trend": [
+    {
+      "month_key": "2022-03",
+      "complete_calendar_month": 0,
+      "observed_days": 1,
+      "shipped_value": 94183.0,
+      "valued_orders": 139,
+      "value_per_observed_day": 94183.0,
+      "prior_observed_month_value": null
+    },
+    {
+      "month_key": "2022-04",
+      "complete_calendar_month": 1,
+      "observed_days": 30,
+      "shipped_value": 25668848.0,
+      "valued_orders": 38220,
+      "value_per_observed_day": 855628.26666667,
+      "prior_observed_month_value": 94183.0
+    },
+    {
+      "month_key": "2022-05",
+      "complete_calendar_month": 1,
+      "observed_days": 31,
+      "shipped_value": 23464291.0,
+      "valued_orders": 33018,
+      "value_per_observed_day": 756912.61290323,
+      "prior_observed_month_value": 25668848.0
+    },
+    {
+      "month_key": "2022-06",
+      "complete_calendar_month": 0,
+      "observed_days": 29,
+      "shipped_value": 20433336.0,
+      "valued_orders": 28850,
+      "value_per_observed_day": 704597.79310345,
+      "prior_observed_month_value": 23464291.0
+    }
+  ],
+  "comparable_may_june": [
+    {
+      "month_key": "2022-05",
+      "shipped_value": 21906300.0,
+      "valued_orders": 30903,
+      "value_change_pct": null
+    },
+    {
+      "month_key": "2022-06",
+      "shipped_value": 20433336.0,
+      "valued_orders": 28850,
+      "value_change_pct": -6.72392873
+    }
+  ],
+  "category_performance": [
+    {
+      "category": "Set",
+      "line_count": 50281,
+      "cancelled_lines": 7336.0,
+      "units": 41758.0,
+      "shipped_value": 34733734.0,
+      "value_share_pct": 49.86133493,
+      "cancelled_line_pct": 14.59,
+      "value_rank": 1
+    },
+    {
+      "category": "Kurta",
+      "line_count": 49874,
+      "cancelled_lines": 7253.0,
+      "units": 41627.0,
+      "shipped_value": 18930111.0,
+      "value_share_pct": 27.17475192,
+      "cancelled_line_pct": 14.5426,
+      "value_rank": 2
+    },
+    {
+      "category": "Western Dress",
+      "line_count": 15500,
+      "cancelled_lines": 2122.0,
+      "units": 12897.0,
+      "shipped_value": 9828746.0,
+      "value_share_pct": 14.10946477,
+      "cancelled_line_pct": 13.6903,
+      "value_rank": 3
+    },
+    {
+      "category": "Top",
+      "line_count": 10622,
+      "cancelled_lines": 1276.0,
+      "units": 9152.0,
+      "shipped_value": 4795739.0,
+      "value_share_pct": 6.88442966,
+      "cancelled_line_pct": 12.0128,
+      "value_rank": 4
+    },
+    {
+      "category": "Ethnic Dress",
+      "line_count": 1159,
+      "cancelled_lines": 145.0,
+      "units": 993.0,
+      "shipped_value": 715351.0,
+      "value_share_pct": 1.02690819,
+      "cancelled_line_pct": 12.5108,
+      "value_rank": 5
+    },
+    {
+      "category": "Blouse",
+      "line_count": 926,
+      "cancelled_lines": 116.0,
+      "units": 796.0,
+      "shipped_value": 409494.0,
+      "value_share_pct": 0.58784113,
+      "cancelled_line_pct": 12.527,
+      "value_rank": 6
+    },
+    {
+      "category": "Bottom",
+      "line_count": 440,
+      "cancelled_lines": 60.0,
+      "units": 374.0,
+      "shipped_value": 132872.0,
+      "value_share_pct": 0.19074181,
+      "cancelled_line_pct": 13.6364,
+      "value_rank": 7
+    },
+    {
+      "category": "Saree",
+      "line_count": 164,
+      "cancelled_lines": 21.0,
+      "units": 146.0,
+      "shipped_value": 113696.0,
+      "value_share_pct": 0.16321408,
+      "cancelled_line_pct": 12.8049,
+      "value_rank": 8
+    },
+    {
+      "category": "Dupatta",
+      "line_count": 3,
+      "cancelled_lines": 0.0,
+      "units": 3.0,
+      "shipped_value": 915.0,
+      "value_share_pct": 0.00131351,
+      "cancelled_line_pct": 0.0,
+      "value_rank": 9
+    }
+  ],
+  "category_decline_contribution": [
+    {
+      "category": "Set",
+      "may_value": 10580462.0,
+      "june_value": 9577719.0,
+      "value_change": -1002743.0,
+      "net_decline_contribution_pct": 68.07654498
+    },
+    {
+      "category": "Top",
+      "may_value": 1674391.0,
+      "june_value": 1336889.0,
+      "value_change": -337502.0,
+      "net_decline_contribution_pct": 22.9131194
+    },
+    {
+      "category": "Western Dress",
+      "may_value": 3543236.0,
+      "june_value": 3331667.0,
+      "value_change": -211569.0,
+      "net_decline_contribution_pct": 14.3634875
+    },
+    {
+      "category": "Blouse",
+      "may_value": 133276.0,
+      "june_value": 94297.0,
+      "value_change": -38979.0,
+      "net_decline_contribution_pct": 2.64629685
+    },
+    {
+      "category": "Saree",
+      "may_value": 39305.0,
+      "june_value": 24383.0,
+      "value_change": -14922.0,
+      "net_decline_contribution_pct": 1.01305938
+    },
+    {
+      "category": "Ethnic Dress",
+      "may_value": 240416.0,
+      "june_value": 228264.0,
+      "value_change": -12152.0,
+      "net_decline_contribution_pct": 0.82500319
+    },
+    {
+      "category": "Bottom",
+      "may_value": 39668.0,
+      "june_value": 33065.0,
+      "value_change": -6603.0,
+      "net_decline_contribution_pct": 0.4482798
+    },
+    {
+      "category": "Dupatta",
+      "may_value": 0.0,
+      "june_value": 915.0,
+      "value_change": 915.0,
+      "net_decline_contribution_pct": -0.06211964
+    },
+    {
+      "category": "Kurta",
+      "may_value": 5655546.0,
+      "june_value": 5806137.0,
+      "value_change": 150591.0,
+      "net_decline_contribution_pct": -10.22367145
+    }
+  ],
+  "state_performance": [
+    {
+      "ship_state": "MAHARASHTRA",
+      "line_count": 22259,
+      "orders": 20780,
+      "shipped_value": 11954553.0,
+      "cancelled_line_pct": 13.32
+    },
+    {
+      "ship_state": "KARNATAKA",
+      "line_count": 17325,
+      "orders": 16182,
+      "shipped_value": 9436223.0,
+      "cancelled_line_pct": 12.95
+    },
+    {
+      "ship_state": "TELANGANA",
+      "line_count": 11330,
+      "orders": 10405,
+      "shipped_value": 6123778.0,
+      "cancelled_line_pct": 14.42
+    },
+    {
+      "ship_state": "UTTAR PRADESH",
+      "line_count": 10637,
+      "orders": 10062,
+      "shipped_value": 5968450.0,
+      "cancelled_line_pct": 15.08
+    },
+    {
+      "ship_state": "TAMIL NADU",
+      "line_count": 11483,
+      "orders": 10519,
+      "shipped_value": 5812085.0,
+      "cancelled_line_pct": 13.88
+    },
+    {
+      "ship_state": "DELHI",
+      "line_count": 7048,
+      "orders": 6609,
+      "shipped_value": 3950397.0,
+      "cancelled_line_pct": 13.08
+    },
+    {
+      "ship_state": "KERALA",
+      "line_count": 6584,
+      "orders": 6105,
+      "shipped_value": 3301081.0,
+      "cancelled_line_pct": 17.83
+    },
+    {
+      "ship_state": "WEST BENGAL",
+      "line_count": 5962,
+      "orders": 5653,
+      "shipped_value": 3096107.0,
+      "cancelled_line_pct": 14.81
+    },
+    {
+      "ship_state": "ANDHRA PRADESH",
+      "line_count": 5430,
+      "orders": 4979,
+      "shipped_value": 2796932.0,
+      "cancelled_line_pct": 16.43
+    },
+    {
+      "ship_state": "HARYANA",
+      "line_count": 4415,
+      "orders": 4142,
+      "shipped_value": 2588923.0,
+      "cancelled_line_pct": 12.75
+    },
+    {
+      "ship_state": "GUJARAT",
+      "line_count": 4489,
+      "orders": 4169,
+      "shipped_value": 2425737.0,
+      "cancelled_line_pct": 13.17
+    },
+    {
+      "ship_state": "RAJASTHAN",
+      "line_count": 2718,
+      "orders": 2512,
+      "shipped_value": 1569553.0,
+      "cancelled_line_pct": 13.8
+    },
+    {
+      "ship_state": "MADHYA PRADESH",
+      "line_count": 2529,
+      "orders": 2375,
+      "shipped_value": 1418981.0,
+      "cancelled_line_pct": 15.03
+    },
+    {
+      "ship_state": "BIHAR",
+      "line_count": 2114,
+      "orders": 2017,
+      "shipped_value": 1221909.0,
+      "cancelled_line_pct": 16.13
+    },
+    {
+      "ship_state": "ODISHA",
+      "line_count": 2139,
+      "orders": 2024,
+      "shipped_value": 1183879.0,
+      "cancelled_line_pct": 16.18
+    },
+    {
+      "ship_state": "PUNJAB",
+      "line_count": 1918,
+      "orders": 1809,
+      "shipped_value": 1086884.0,
+      "cancelled_line_pct": 12.88
+    },
+    {
+      "ship_state": "ASSAM",
+      "line_count": 1663,
+      "orders": 1601,
+      "shipped_value": 863518.0,
+      "cancelled_line_pct": 14.91
+    },
+    {
+      "ship_state": "UTTARAKHAND",
+      "line_count": 1553,
+      "orders": 1480,
+      "shipped_value": 853084.0,
+      "cancelled_line_pct": 15.07
+    },
+    {
+      "ship_state": "JHARKHAND",
+      "line_count": 1456,
+      "orders": 1382,
+      "shipped_value": 791569.0,
+      "cancelled_line_pct": 15.87
+    },
+    {
+      "ship_state": "GOA",
+      "line_count": 1137,
+      "orders": 1081,
+      "shipped_value": 583990.0,
+      "cancelled_line_pct": 11.43
+    },
+    {
+      "ship_state": "CHHATTISGARH",
+      "line_count": 909,
+      "orders": 873,
+      "shipped_value": 500663.0,
+      "cancelled_line_pct": 13.86
+    },
+    {
+      "ship_state": "HIMACHAL PRADESH",
+      "line_count": 788,
+      "orders": 750,
+      "shipped_value": 432423.0,
+      "cancelled_line_pct": 18.53
+    },
+    {
+      "ship_state": "JAMMU & KASHMIR",
+      "line_count": 702,
+      "orders": 670,
+      "shipped_value": 390140.0,
+      "cancelled_line_pct": 16.95
+    },
+    {
+      "ship_state": "MANIPUR",
+      "line_count": 316,
+      "orders": 287,
+      "shipped_value": 197091.0,
+      "cancelled_line_pct": 11.39
+    },
+    {
+      "ship_state": "CHANDIGARH",
+      "line_count": 333,
+      "orders": 315,
+      "shipped_value": 189745.0,
+      "cancelled_line_pct": 10.81
+    },
+    {
+      "ship_state": "PUDUCHERRY",
+      "line_count": 351,
+      "orders": 310,
+      "shipped_value": 168925.0,
+      "cancelled_line_pct": 14.81
+    },
+    {
+      "ship_state": "ANDAMAN & NICOBAR",
+      "line_count": 257,
+      "orders": 242,
+      "shipped_value": 129094.0,
+      "cancelled_line_pct": 17.51
+    },
+    {
+      "ship_state": "NAGALAND",
+      "line_count": 187,
+      "orders": 170,
+      "shipped_value": 123870.0,
+      "cancelled_line_pct": 11.76
+    },
+    {
+      "ship_state": "SIKKIM",
+      "line_count": 205,
+      "orders": 197,
+      "shipped_value": 121611.0,
+      "cancelled_line_pct": 15.12
+    },
+    {
+      "ship_state": "MEGHALAYA",
+      "line_count": 207,
+      "orders": 194,
+      "shipped_value": 99031.0,
+      "cancelled_line_pct": 16.43
+    },
+    {
+      "ship_state": "ARUNACHAL PRADESH",
+      "line_count": 147,
+      "orders": 134,
+      "shipped_value": 83658.0,
+      "cancelled_line_pct": 13.61
+    },
+    {
+      "ship_state": "TRIPURA",
+      "line_count": 151,
+      "orders": 143,
+      "shipped_value": 80285.0,
+      "cancelled_line_pct": 14.57
+    },
+    {
+      "ship_state": "DADRA AND NAGAR",
+      "line_count": 70,
+      "orders": 60,
+      "shipped_value": 36762.0,
+      "cancelled_line_pct": 17.14
+    },
+    {
+      "ship_state": "LADAKH",
+      "line_count": 43,
+      "orders": 42,
+      "shipped_value": 31229.0,
+      "cancelled_line_pct": 13.95
+    },
+    {
+      "ship_state": "MIZORAM",
+      "line_count": 76,
+      "orders": 72,
+      "shipped_value": 31045.0,
+      "cancelled_line_pct": 18.42
+    },
+    {
+      "ship_state": "Unknown",
+      "line_count": 33,
+      "orders": 28,
+      "shipped_value": 15012.0,
+      "cancelled_line_pct": 21.21
+    },
+    {
+      "ship_state": "LAKSHADWEEP",
+      "line_count": 4,
+      "orders": 4,
+      "shipped_value": 2441.0,
+      "cancelled_line_pct": 25.0
+    },
+    {
+      "ship_state": "Unmapped (APO)",
+      "line_count": 1,
+      "orders": 1,
+      "shipped_value": 0.0,
+      "cancelled_line_pct": 100.0
+    }
+  ],
+  "fulfillment_operations": [
+    {
+      "fulfillment": "Merchant",
+      "line_count": 39277,
+      "cancelled_lines": 6861.0,
+      "cancelled_line_pct": 17.4682,
+      "returned_line_pct": 5.3415,
+      "shipped_value": 19339038.0
+    },
+    {
+      "fulfillment": "Amazon",
+      "line_count": 89692,
+      "cancelled_lines": 11468.0,
+      "cancelled_line_pct": 12.786,
+      "returned_line_pct": 0.0,
+      "shipped_value": 50321620.0
+    }
+  ],
+  "status_distribution": [
+    {
+      "status": "Shipped",
+      "status_group": "Shipped",
+      "line_count": 77801,
+      "units": 78006.0,
+      "recorded_value": 50321620.0,
+      "missing_amount_lines": 208.0
+    },
+    {
+      "status": "Shipped - Delivered to Buyer",
+      "status_group": "Shipped",
+      "line_count": 28769,
+      "units": 28886.0,
+      "recorded_value": 18650815.0,
+      "missing_amount_lines": 8.0
+    },
+    {
+      "status": "Cancelled",
+      "status_group": "Cancelled",
+      "line_count": 18329,
+      "units": 5657.0,
+      "recorded_value": 6919284.3,
+      "missing_amount_lines": 7563.0
+    },
+    {
+      "status": "Shipped - Returned to Seller",
+      "status_group": "Returned or returning",
+      "line_count": 1953,
+      "units": 1970.0,
+      "recorded_value": 1269644.0,
+      "missing_amount_lines": 3.0
+    },
+    {
+      "status": "Shipped - Picked Up",
+      "status_group": "Shipped",
+      "line_count": 973,
+      "units": 977.0,
+      "recorded_value": 661252.0,
+      "missing_amount_lines": 0.0
+    },
+    {
+      "status": "Pending",
+      "status_group": "Pending",
+      "line_count": 658,
+      "units": 657.0,
+      "recorded_value": 430271.0,
+      "missing_amount_lines": 2.0
+    },
+    {
+      "status": "Pending - Waiting for Pick Up",
+      "status_group": "Pending",
+      "line_count": 281,
+      "units": 283.0,
+      "recorded_value": 192138.0,
+      "missing_amount_lines": 0.0
+    },
+    {
+      "status": "Shipped - Returning to Seller",
+      "status_group": "Returned or returning",
+      "line_count": 145,
+      "units": 150.0,
+      "recorded_value": 107620.0,
+      "missing_amount_lines": 0.0
+    },
+    {
+      "status": "Shipped - Out for Delivery",
+      "status_group": "Shipped",
+      "line_count": 35,
+      "units": 35.0,
+      "recorded_value": 26971.0,
+      "missing_amount_lines": 0.0
+    },
+    {
+      "status": "Shipped - Rejected by Buyer",
+      "status_group": "Exception",
+      "line_count": 11,
+      "units": 11.0,
+      "recorded_value": 7295.0,
+      "missing_amount_lines": 0.0
+    },
+    {
+      "status": "Shipping",
+      "status_group": "Shipping",
+      "line_count": 8,
+      "units": 8.0,
+      "recorded_value": null,
+      "missing_amount_lines": 8.0
+    },
+    {
+      "status": "Shipped - Lost in Transit",
+      "status_group": "Exception",
+      "line_count": 5,
+      "units": 5.0,
+      "recorded_value": 1997.0,
+      "missing_amount_lines": 0.0
+    },
+    {
+      "status": "Shipped - Damaged",
+      "status_group": "Exception",
+      "line_count": 1,
+      "units": 1.0,
+      "recorded_value": 1136.0,
+      "missing_amount_lines": 0.0
+    }
+  ],
+  "b2b_segment": [
+    {
+      "is_b2b": 0,
+      "line_count": 128098,
+      "orders": 119584,
+      "shipped_value": 69110531.0,
+      "cancelled_line_pct": 14.2516
+    },
+    {
+      "is_b2b": 1,
+      "line_count": 871,
+      "orders": 794,
+      "shipped_value": 550127.0,
+      "cancelled_line_pct": 8.3812
+    }
+  ],
+  "sku_rank_within_category": [
+    {
+      "category": "Blouse",
+      "sku": "J0217-BL-L",
+      "line_count": 32,
+      "cancelled_line_pct": 6.25,
+      "shipped_value": 20275.0,
+      "category_rank": 1
+    },
+    {
+      "category": "Blouse",
+      "sku": "J0217-BL-M",
+      "line_count": 40,
+      "cancelled_line_pct": 22.5,
+      "shipped_value": 19593.0,
+      "category_rank": 2
+    },
+    {
+      "category": "Blouse",
+      "sku": "J0217-BL-XL",
+      "line_count": 31,
+      "cancelled_line_pct": 12.9032,
+      "shipped_value": 18922.0,
+      "category_rank": 3
+    },
+    {
+      "category": "Blouse",
+      "sku": "BL021-71BLACK",
+      "line_count": 45,
+      "cancelled_line_pct": 20.0,
+      "shipped_value": 14234.0,
+      "category_rank": 4
+    },
+    {
+      "category": "Ethnic Dress",
+      "sku": "J0006-SET-M",
+      "line_count": 91,
+      "cancelled_line_pct": 12.0879,
+      "shipped_value": 66258.0,
+      "category_rank": 1
+    },
+    {
+      "category": "Ethnic Dress",
+      "sku": "J0006-SET-XL",
+      "line_count": 68,
+      "cancelled_line_pct": 13.2353,
+      "shipped_value": 48896.0,
+      "category_rank": 2
+    },
+    {
+      "category": "Ethnic Dress",
+      "sku": "J0006-SET-S",
+      "line_count": 64,
+      "cancelled_line_pct": 14.0625,
+      "shipped_value": 43363.0,
+      "category_rank": 3
+    },
+    {
+      "category": "Ethnic Dress",
+      "sku": "J0006-SET-L",
+      "line_count": 62,
+      "cancelled_line_pct": 20.9677,
+      "shipped_value": 39147.0,
+      "category_rank": 4
+    },
+    {
+      "category": "Ethnic Dress",
+      "sku": "J0006-SET-XXXL",
+      "line_count": 49,
+      "cancelled_line_pct": 14.2857,
+      "shipped_value": 35497.0,
+      "category_rank": 5
+    },
+    {
+      "category": "Kurta",
+      "sku": "JNE3405-KR-L",
+      "line_count": 535,
+      "cancelled_line_pct": 16.0748,
+      "shipped_value": 177550.0,
+      "category_rank": 1
+    },
+    {
+      "category": "Kurta",
+      "sku": "JNE3405-KR-S",
+      "line_count": 443,
+      "cancelled_line_pct": 14.6727,
+      "shipped_value": 153476.0,
+      "category_rank": 2
+    },
+    {
+      "category": "Kurta",
+      "sku": "JNE3405-KR-M",
+      "line_count": 394,
+      "cancelled_line_pct": 16.2437,
+      "shipped_value": 124910.0,
+      "category_rank": 3
+    },
+    {
+      "category": "Kurta",
+      "sku": "JNE3567-KR-M",
+      "line_count": 317,
+      "cancelled_line_pct": 15.7729,
+      "shipped_value": 103950.0,
+      "category_rank": 4
+    },
+    {
+      "category": "Kurta",
+      "sku": "JNE3399-KR-M",
+      "line_count": 281,
+      "cancelled_line_pct": 14.5907,
+      "shipped_value": 103931.0,
+      "category_rank": 5
+    },
+    {
+      "category": "Set",
+      "sku": "J0230-SKD-M",
+      "line_count": 506,
+      "cancelled_line_pct": 14.4269,
+      "shipped_value": 479750.0,
+      "category_rank": 1
+    },
+    {
+      "category": "Set",
+      "sku": "J0230-SKD-S",
+      "line_count": 452,
+      "cancelled_line_pct": 11.7257,
+      "shipped_value": 436032.0,
+      "category_rank": 2
+    },
+    {
+      "category": "Set",
+      "sku": "J0230-SKD-L",
+      "line_count": 297,
+      "cancelled_line_pct": 15.1515,
+      "shipped_value": 275352.0,
+      "category_rank": 3
+    },
+    {
+      "category": "Set",
+      "sku": "SET268-KR-NP-XL",
+      "line_count": 386,
+      "cancelled_line_pct": 11.1399,
+      "shipped_value": 260156.0,
+      "category_rank": 4
+    },
+    {
+      "category": "Set",
+      "sku": "SET268-KR-NP-L",
+      "line_count": 362,
+      "cancelled_line_pct": 10.221,
+      "shipped_value": 241920.0,
+      "category_rank": 5
+    },
+    {
+      "category": "Top",
+      "sku": "J0119-TP-XL",
+      "line_count": 170,
+      "cancelled_line_pct": 8.2353,
+      "shipped_value": 93026.0,
+      "category_rank": 1
+    },
+    {
+      "category": "Top",
+      "sku": "J0119-TP-XXXL",
+      "line_count": 180,
+      "cancelled_line_pct": 10.5556,
+      "shipped_value": 92492.0,
+      "category_rank": 2
+    },
+    {
+      "category": "Top",
+      "sku": "J0119-TP-XXL",
+      "line_count": 161,
+      "cancelled_line_pct": 11.8012,
+      "shipped_value": 85052.0,
+      "category_rank": 3
+    },
+    {
+      "category": "Top",
+      "sku": "J0119-TP-L",
+      "line_count": 133,
+      "cancelled_line_pct": 12.782,
+      "shipped_value": 69216.0,
+      "category_rank": 4
+    },
+    {
+      "category": "Top",
+      "sku": "J0301-TP-XL",
+      "line_count": 138,
+      "cancelled_line_pct": 10.1449,
+      "shipped_value": 66183.0,
+      "category_rank": 5
+    },
+    {
+      "category": "Western Dress",
+      "sku": "JNE3797-KR-L",
+      "line_count": 773,
+      "cancelled_line_pct": 16.4295,
+      "shipped_value": 439562.0,
+      "category_rank": 1
+    },
+    {
+      "category": "Western Dress",
+      "sku": "JNE3797-KR-M",
+      "line_count": 657,
+      "cancelled_line_pct": 16.2861,
+      "shipped_value": 376370.0,
+      "category_rank": 2
+    },
+    {
+      "category": "Western Dress",
+      "sku": "JNE3797-KR-S",
+      "line_count": 587,
+      "cancelled_line_pct": 16.8654,
+      "shipped_value": 340662.0,
+      "category_rank": 3
+    },
+    {
+      "category": "Western Dress",
+      "sku": "JNE3797-KR-XL",
+      "line_count": 474,
+      "cancelled_line_pct": 14.557,
+      "shipped_value": 277177.0,
+      "category_rank": 4
+    },
+    {
+      "category": "Western Dress",
+      "sku": "JNE3797-KR-XS",
+      "line_count": 431,
+      "cancelled_line_pct": 14.8492,
+      "shipped_value": 257588.0,
+      "category_rank": 5
+    }
+  ],
+  "daily_running_value": [
+    {
+      "order_date": "2022-03-31T00:00:00.000",
+      "shipped_value": 94183.0,
+      "cumulative_shipped_value": 94183.0,
+      "trailing_7_observed_day_average": 94183.0
+    },
+    {
+      "order_date": "2022-04-01T00:00:00.000",
+      "shipped_value": 767000.0,
+      "cumulative_shipped_value": 861183.0,
+      "trailing_7_observed_day_average": 430591.5
+    },
+    {
+      "order_date": "2022-04-02T00:00:00.000",
+      "shipped_value": 804455.0,
+      "cumulative_shipped_value": 1665638.0,
+      "trailing_7_observed_day_average": 555212.66666667
+    },
+    {
+      "order_date": "2022-04-03T00:00:00.000",
+      "shipped_value": 911517.0,
+      "cumulative_shipped_value": 2577155.0,
+      "trailing_7_observed_day_average": 644288.75
+    },
+    {
+      "order_date": "2022-04-04T00:00:00.000",
+      "shipped_value": 802266.0,
+      "cumulative_shipped_value": 3379421.0,
+      "trailing_7_observed_day_average": 675884.2
+    },
+    {
+      "order_date": "2022-04-05T00:00:00.000",
+      "shipped_value": 860601.0,
+      "cumulative_shipped_value": 4240022.0,
+      "trailing_7_observed_day_average": 706670.33333333
+    },
+    {
+      "order_date": "2022-04-06T00:00:00.000",
+      "shipped_value": 796326.0,
+      "cumulative_shipped_value": 5036348.0,
+      "trailing_7_observed_day_average": 719478.28571429
+    },
+    {
+      "order_date": "2022-04-07T00:00:00.000",
+      "shipped_value": 804152.0,
+      "cumulative_shipped_value": 5840500.0,
+      "trailing_7_observed_day_average": 820902.42857143
+    },
+    {
+      "order_date": "2022-04-08T00:00:00.000",
+      "shipped_value": 907514.0,
+      "cumulative_shipped_value": 6748014.0,
+      "trailing_7_observed_day_average": 840975.85714286
+    },
+    {
+      "order_date": "2022-04-09T00:00:00.000",
+      "shipped_value": 858859.0,
+      "cumulative_shipped_value": 7606873.0,
+      "trailing_7_observed_day_average": 848747.85714286
+    },
+    {
+      "order_date": "2022-04-10T00:00:00.000",
+      "shipped_value": 964543.0,
+      "cumulative_shipped_value": 8571416.0,
+      "trailing_7_observed_day_average": 856323.0
+    },
+    {
+      "order_date": "2022-04-11T00:00:00.000",
+      "shipped_value": 833704.0,
+      "cumulative_shipped_value": 9405120.0,
+      "trailing_7_observed_day_average": 860814.14285714
+    },
+    {
+      "order_date": "2022-04-12T00:00:00.000",
+      "shipped_value": 772540.0,
+      "cumulative_shipped_value": 10177660.0,
+      "trailing_7_observed_day_average": 848234.0
+    },
+    {
+      "order_date": "2022-04-13T00:00:00.000",
+      "shipped_value": 872149.0,
+      "cumulative_shipped_value": 11049809.0,
+      "trailing_7_observed_day_average": 859065.85714286
+    },
+    {
+      "order_date": "2022-04-14T00:00:00.000",
+      "shipped_value": 1008387.0,
+      "cumulative_shipped_value": 12058196.0,
+      "trailing_7_observed_day_average": 888242.28571429
+    },
+    {
+      "order_date": "2022-04-15T00:00:00.000",
+      "shipped_value": 909660.0,
+      "cumulative_shipped_value": 12967856.0,
+      "trailing_7_observed_day_average": 888548.85714286
+    },
+    {
+      "order_date": "2022-04-16T00:00:00.000",
+      "shipped_value": 879483.0,
+      "cumulative_shipped_value": 13847339.0,
+      "trailing_7_observed_day_average": 891495.14285714
+    },
+    {
+      "order_date": "2022-04-17T00:00:00.000",
+      "shipped_value": 821728.0,
+      "cumulative_shipped_value": 14669067.0,
+      "trailing_7_observed_day_average": 871093.0
+    },
+    {
+      "order_date": "2022-04-18T00:00:00.000",
+      "shipped_value": 790274.0,
+      "cumulative_shipped_value": 15459341.0,
+      "trailing_7_observed_day_average": 864888.71428571
+    },
+    {
+      "order_date": "2022-04-19T00:00:00.000",
+      "shipped_value": 863584.0,
+      "cumulative_shipped_value": 16322925.0,
+      "trailing_7_observed_day_average": 877895.0
+    },
+    {
+      "order_date": "2022-04-20T00:00:00.000",
+      "shipped_value": 988163.0,
+      "cumulative_shipped_value": 17311088.0,
+      "trailing_7_observed_day_average": 894468.42857143
+    },
+    {
+      "order_date": "2022-04-21T00:00:00.000",
+      "shipped_value": 872087.0,
+      "cumulative_shipped_value": 18183175.0,
+      "trailing_7_observed_day_average": 874997.0
+    },
+    {
+      "order_date": "2022-04-22T00:00:00.000",
+      "shipped_value": 867165.0,
+      "cumulative_shipped_value": 19050340.0,
+      "trailing_7_observed_day_average": 868926.28571429
+    },
+    {
+      "order_date": "2022-04-23T00:00:00.000",
+      "shipped_value": 957244.0,
+      "cumulative_shipped_value": 20007584.0,
+      "trailing_7_observed_day_average": 880035.0
+    },
+    {
+      "order_date": "2022-04-24T00:00:00.000",
+      "shipped_value": 974271.0,
+      "cumulative_shipped_value": 20981855.0,
+      "trailing_7_observed_day_average": 901826.85714286
+    },
+    {
+      "order_date": "2022-04-25T00:00:00.000",
+      "shipped_value": 843736.0,
+      "cumulative_shipped_value": 21825591.0,
+      "trailing_7_observed_day_average": 909464.28571429
+    },
+    {
+      "order_date": "2022-04-26T00:00:00.000",
+      "shipped_value": 810294.0,
+      "cumulative_shipped_value": 22635885.0,
+      "trailing_7_observed_day_average": 901851.42857143
+    },
+    {
+      "order_date": "2022-04-27T00:00:00.000",
+      "shipped_value": 736721.0,
+      "cumulative_shipped_value": 23372606.0,
+      "trailing_7_observed_day_average": 865931.14285714
+    },
+    {
+      "order_date": "2022-04-28T00:00:00.000",
+      "shipped_value": 751877.0,
+      "cumulative_shipped_value": 24124483.0,
+      "trailing_7_observed_day_average": 848758.28571429
+    },
+    {
+      "order_date": "2022-04-29T00:00:00.000",
+      "shipped_value": 751385.0,
+      "cumulative_shipped_value": 24875868.0,
+      "trailing_7_observed_day_average": 832218.28571429
+    },
+    {
+      "order_date": "2022-04-30T00:00:00.000",
+      "shipped_value": 887163.0,
+      "cumulative_shipped_value": 25763031.0,
+      "trailing_7_observed_day_average": 822206.71428571
+    },
+    {
+      "order_date": "2022-05-01T00:00:00.000",
+      "shipped_value": 993158.0,
+      "cumulative_shipped_value": 26756189.0,
+      "trailing_7_observed_day_average": 824904.85714286
+    },
+    {
+      "order_date": "2022-05-02T00:00:00.000",
+      "shipped_value": 1065508.0,
+      "cumulative_shipped_value": 27821697.0,
+      "trailing_7_observed_day_average": 856586.57142857
+    },
+    {
+      "order_date": "2022-05-03T00:00:00.000",
+      "shipped_value": 1075061.0,
+      "cumulative_shipped_value": 28896758.0,
+      "trailing_7_observed_day_average": 894410.42857143
+    },
+    {
+      "order_date": "2022-05-04T00:00:00.000",
+      "shipped_value": 1094989.0,
+      "cumulative_shipped_value": 29991747.0,
+      "trailing_7_observed_day_average": 945591.57142857
+    },
+    {
+      "order_date": "2022-05-05T00:00:00.000",
+      "shipped_value": 805545.0,
+      "cumulative_shipped_value": 30797292.0,
+      "trailing_7_observed_day_average": 953258.42857143
+    },
+    {
+      "order_date": "2022-05-06T00:00:00.000",
+      "shipped_value": 833418.0,
+      "cumulative_shipped_value": 31630710.0,
+      "trailing_7_observed_day_average": 964977.42857143
+    },
+    {
+      "order_date": "2022-05-07T00:00:00.000",
+      "shipped_value": 819961.0,
+      "cumulative_shipped_value": 32450671.0,
+      "trailing_7_observed_day_average": 955377.14285714
+    },
+    {
+      "order_date": "2022-05-08T00:00:00.000",
+      "shipped_value": 788436.0,
+      "cumulative_shipped_value": 33239107.0,
+      "trailing_7_observed_day_average": 926131.14285714
+    },
+    {
+      "order_date": "2022-05-09T00:00:00.000",
+      "shipped_value": 713374.0,
+      "cumulative_shipped_value": 33952481.0,
+      "trailing_7_observed_day_average": 875826.28571429
+    },
+    {
+      "order_date": "2022-05-10T00:00:00.000",
+      "shipped_value": 628925.0,
+      "cumulative_shipped_value": 34581406.0,
+      "trailing_7_observed_day_average": 812092.57142857
+    },
+    {
+      "order_date": "2022-05-11T00:00:00.000",
+      "shipped_value": 650918.0,
+      "cumulative_shipped_value": 35232324.0,
+      "trailing_7_observed_day_average": 748653.85714286
+    },
+    {
+      "order_date": "2022-05-12T00:00:00.000",
+      "shipped_value": 620424.0,
+      "cumulative_shipped_value": 35852748.0,
+      "trailing_7_observed_day_average": 722208.0
+    },
+    {
+      "order_date": "2022-05-13T00:00:00.000",
+      "shipped_value": 627825.0,
+      "cumulative_shipped_value": 36480573.0,
+      "trailing_7_observed_day_average": 692837.57142857
+    },
+    {
+      "order_date": "2022-05-14T00:00:00.000",
+      "shipped_value": 669930.0,
+      "cumulative_shipped_value": 37150503.0,
+      "trailing_7_observed_day_average": 671404.57142857
+    },
+    {
+      "order_date": "2022-05-15T00:00:00.000",
+      "shipped_value": 771745.0,
+      "cumulative_shipped_value": 37922248.0,
+      "trailing_7_observed_day_average": 669020.14285714
+    },
+    {
+      "order_date": "2022-05-16T00:00:00.000",
+      "shipped_value": 658402.0,
+      "cumulative_shipped_value": 38580650.0,
+      "trailing_7_observed_day_average": 661167.0
+    },
+    {
+      "order_date": "2022-05-17T00:00:00.000",
+      "shipped_value": 655891.0,
+      "cumulative_shipped_value": 39236541.0,
+      "trailing_7_observed_day_average": 665019.28571429
+    },
+    {
+      "order_date": "2022-05-18T00:00:00.000",
+      "shipped_value": 702897.0,
+      "cumulative_shipped_value": 39939438.0,
+      "trailing_7_observed_day_average": 672444.85714286
+    },
+    {
+      "order_date": "2022-05-19T00:00:00.000",
+      "shipped_value": 696643.0,
+      "cumulative_shipped_value": 40636081.0,
+      "trailing_7_observed_day_average": 683333.28571429
+    },
+    {
+      "order_date": "2022-05-20T00:00:00.000",
+      "shipped_value": 626774.0,
+      "cumulative_shipped_value": 41262855.0,
+      "trailing_7_observed_day_average": 683183.14285714
+    },
+    {
+      "order_date": "2022-05-21T00:00:00.000",
+      "shipped_value": 614413.0,
+      "cumulative_shipped_value": 41877268.0,
+      "trailing_7_observed_day_average": 675252.14285714
+    },
+    {
+      "order_date": "2022-05-22T00:00:00.000",
+      "shipped_value": 699548.0,
+      "cumulative_shipped_value": 42576816.0,
+      "trailing_7_observed_day_average": 664938.28571429
+    },
+    {
+      "order_date": "2022-05-23T00:00:00.000",
+      "shipped_value": 680660.0,
+      "cumulative_shipped_value": 43257476.0,
+      "trailing_7_observed_day_average": 668118.0
+    },
+    {
+      "order_date": "2022-05-24T00:00:00.000",
+      "shipped_value": 694870.0,
+      "cumulative_shipped_value": 43952346.0,
+      "trailing_7_observed_day_average": 673686.42857143
+    },
+    {
+      "order_date": "2022-05-25T00:00:00.000",
+      "shipped_value": 740534.0,
+      "cumulative_shipped_value": 44692880.0,
+      "trailing_7_observed_day_average": 679063.14285714
+    },
+    {
+      "order_date": "2022-05-26T00:00:00.000",
+      "shipped_value": 698204.0,
+      "cumulative_shipped_value": 45391084.0,
+      "trailing_7_observed_day_average": 679286.14285714
+    },
+    {
+      "order_date": "2022-05-27T00:00:00.000",
+      "shipped_value": 747304.0,
+      "cumulative_shipped_value": 46138388.0,
+      "trailing_7_observed_day_average": 696504.71428571
+    },
+    {
+      "order_date": "2022-05-28T00:00:00.000",
+      "shipped_value": 784103.0,
+      "cumulative_shipped_value": 46922491.0,
+      "trailing_7_observed_day_average": 720746.14285714
+    },
+    {
+      "order_date": "2022-05-29T00:00:00.000",
+      "shipped_value": 746840.0,
+      "cumulative_shipped_value": 47669331.0,
+      "trailing_7_observed_day_average": 727502.14285714
+    },
+    {
+      "order_date": "2022-05-30T00:00:00.000",
+      "shipped_value": 743741.0,
+      "cumulative_shipped_value": 48413072.0,
+      "trailing_7_observed_day_average": 736513.71428571
+    },
+    {
+      "order_date": "2022-05-31T00:00:00.000",
+      "shipped_value": 814250.0,
+      "cumulative_shipped_value": 49227322.0,
+      "trailing_7_observed_day_average": 753568.0
+    },
+    {
+      "order_date": "2022-06-01T00:00:00.000",
+      "shipped_value": 836498.0,
+      "cumulative_shipped_value": 50063820.0,
+      "trailing_7_observed_day_average": 767277.14285714
+    },
+    {
+      "order_date": "2022-06-02T00:00:00.000",
+      "shipped_value": 800693.0,
+      "cumulative_shipped_value": 50864513.0,
+      "trailing_7_observed_day_average": 781918.42857143
+    },
+    {
+      "order_date": "2022-06-03T00:00:00.000",
+      "shipped_value": 661839.0,
+      "cumulative_shipped_value": 51526352.0,
+      "trailing_7_observed_day_average": 769709.14285714
+    },
+    {
+      "order_date": "2022-06-04T00:00:00.000",
+      "shipped_value": 808613.0,
+      "cumulative_shipped_value": 52334965.0,
+      "trailing_7_observed_day_average": 773210.57142857
+    },
+    {
+      "order_date": "2022-06-05T00:00:00.000",
+      "shipped_value": 886804.0,
+      "cumulative_shipped_value": 53221769.0,
+      "trailing_7_observed_day_average": 793205.42857143
+    },
+    {
+      "order_date": "2022-06-06T00:00:00.000",
+      "shipped_value": 861469.0,
+      "cumulative_shipped_value": 54083238.0,
+      "trailing_7_observed_day_average": 810023.71428571
+    },
+    {
+      "order_date": "2022-06-07T00:00:00.000",
+      "shipped_value": 867637.0,
+      "cumulative_shipped_value": 54950875.0,
+      "trailing_7_observed_day_average": 817650.42857143
+    },
+    {
+      "order_date": "2022-06-08T00:00:00.000",
+      "shipped_value": 847229.0,
+      "cumulative_shipped_value": 55798104.0,
+      "trailing_7_observed_day_average": 819183.42857143
+    },
+    {
+      "order_date": "2022-06-09T00:00:00.000",
+      "shipped_value": 851832.0,
+      "cumulative_shipped_value": 56649936.0,
+      "trailing_7_observed_day_average": 826489.0
+    },
+    {
+      "order_date": "2022-06-10T00:00:00.000",
+      "shipped_value": 719933.0,
+      "cumulative_shipped_value": 57369869.0,
+      "trailing_7_observed_day_average": 834788.14285714
+    },
+    {
+      "order_date": "2022-06-11T00:00:00.000",
+      "shipped_value": 775280.0,
+      "cumulative_shipped_value": 58145149.0,
+      "trailing_7_observed_day_average": 830026.28571429
+    },
+    {
+      "order_date": "2022-06-12T00:00:00.000",
+      "shipped_value": 871294.0,
+      "cumulative_shipped_value": 59016443.0,
+      "trailing_7_observed_day_average": 827810.57142857
+    },
+    {
+      "order_date": "2022-06-13T00:00:00.000",
+      "shipped_value": 774902.0,
+      "cumulative_shipped_value": 59791345.0,
+      "trailing_7_observed_day_average": 815443.85714286
+    },
+    {
+      "order_date": "2022-06-14T00:00:00.000",
+      "shipped_value": 805974.0,
+      "cumulative_shipped_value": 60597319.0,
+      "trailing_7_observed_day_average": 806634.85714286
+    },
+    {
+      "order_date": "2022-06-15T00:00:00.000",
+      "shipped_value": 703763.0,
+      "cumulative_shipped_value": 61301082.0,
+      "trailing_7_observed_day_average": 786139.71428571
+    },
+    {
+      "order_date": "2022-06-16T00:00:00.000",
+      "shipped_value": 717921.0,
+      "cumulative_shipped_value": 62019003.0,
+      "trailing_7_observed_day_average": 767009.57142857
+    },
+    {
+      "order_date": "2022-06-17T00:00:00.000",
+      "shipped_value": 668047.0,
+      "cumulative_shipped_value": 62687050.0,
+      "trailing_7_observed_day_average": 759597.28571429
+    },
+    {
+      "order_date": "2022-06-18T00:00:00.000",
+      "shipped_value": 649086.0,
+      "cumulative_shipped_value": 63336136.0,
+      "trailing_7_observed_day_average": 741569.57142857
+    },
+    {
+      "order_date": "2022-06-19T00:00:00.000",
+      "shipped_value": 630457.0,
+      "cumulative_shipped_value": 63966593.0,
+      "trailing_7_observed_day_average": 707164.28571429
+    },
+    {
+      "order_date": "2022-06-20T00:00:00.000",
+      "shipped_value": 670261.0,
+      "cumulative_shipped_value": 64636854.0,
+      "trailing_7_observed_day_average": 692215.57142857
+    },
+    {
+      "order_date": "2022-06-21T00:00:00.000",
+      "shipped_value": 699015.0,
+      "cumulative_shipped_value": 65335869.0,
+      "trailing_7_observed_day_average": 676935.71428571
+    },
+    {
+      "order_date": "2022-06-22T00:00:00.000",
+      "shipped_value": 704612.0,
+      "cumulative_shipped_value": 66040481.0,
+      "trailing_7_observed_day_average": 677057.0
+    },
+    {
+      "order_date": "2022-06-23T00:00:00.000",
+      "shipped_value": 578907.0,
+      "cumulative_shipped_value": 66619388.0,
+      "trailing_7_observed_day_average": 657197.85714286
+    },
+    {
+      "order_date": "2022-06-24T00:00:00.000",
+      "shipped_value": 562114.0,
+      "cumulative_shipped_value": 67181502.0,
+      "trailing_7_observed_day_average": 642064.57142857
+    },
+    {
+      "order_date": "2022-06-25T00:00:00.000",
+      "shipped_value": 597144.0,
+      "cumulative_shipped_value": 67778646.0,
+      "trailing_7_observed_day_average": 634644.28571429
+    },
+    {
+      "order_date": "2022-06-26T00:00:00.000",
+      "shipped_value": 695142.0,
+      "cumulative_shipped_value": 68473788.0,
+      "trailing_7_observed_day_average": 643885.0
+    },
+    {
+      "order_date": "2022-06-27T00:00:00.000",
+      "shipped_value": 627000.0,
+      "cumulative_shipped_value": 69100788.0,
+      "trailing_7_observed_day_average": 637704.85714286
+    },
+    {
+      "order_date": "2022-06-28T00:00:00.000",
+      "shipped_value": 444275.0,
+      "cumulative_shipped_value": 69545063.0,
+      "trailing_7_observed_day_average": 601313.42857143
+    },
+    {
+      "order_date": "2022-06-29T00:00:00.000",
+      "shipped_value": 115595.0,
+      "cumulative_shipped_value": 69660658.0,
+      "trailing_7_observed_day_average": 517168.14285714
+    }
+  ],
+  "promotion_association": [
+    {
+      "has_promotion": 0,
+      "line_count": 49150,
+      "cancelled_line_pct": 36.6918,
+      "shipped_value": 18015256.0
+    },
+    {
+      "has_promotion": 1,
+      "line_count": 79819,
+      "cancelled_line_pct": 0.3696,
+      "shipped_value": 51645402.0
+    }
+  ],
+  "data_quality": [
+    {
+      "line_count": 128969,
+      "missing_amount": 7792.0,
+      "zero_quantity": 12804.0,
+      "courier_conflicts": 93.0,
+      "missing_geography": 33.0,
+      "unvalued_shipped_orders": 115
+    }
+  ]
+}

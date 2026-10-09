@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-10-08T00:46:19.523737+05:30",
+  "checks": {
+    "database_read_only": true,
+    "raw_fact_rows": true,
+    "analytical_rows": true,
+    "shipped_value": true,
+    "status_counts": true,
+    "knowledge_index_loads": true,
+    "final_artifacts_present": true,
+    "powerbi_zip_integrity": true,
+    "powerbi_model_present": true,
+    "prior_powerbi_engine_validation": true,
+    "dependencies_consistent": true,
+    "no_configured_credentials_in_checked_text_artifacts": true,
+    "website_title": true
+  },
+  "passed": true,
+  "dependency_check": "No broken requirements found.",
+  "secret_match_files": [],
+  "powerbi": {
+    "path": "powerbi/CommercePulse.pbix",
+    "sha256": "7e090f2c442cedabcd05831287a3914a66f69693b22b18dc843d346e8a500de4",
+    "scope": "Current file integrity checked. Native DAX and slicer checks are prior delivery evidence, not a new Desktop refresh."
+  },
+  "live_checks": [
+    {
+      "name": "mixed_sql_rag",
+      "passed": true,
+      "text": "Kurta sales in Maharashtra total ₹31,980,39 across 6,580 valued shipped orders. \n\nSales are defined as the shipped sales value, which includes amounts on positive-quantity, known-INR lines with eligible statuses such as Shipped, Delivered to Buyer, Picked Up, or Out for Delivery [D1]. This serves as a shipped-value proxy rather than recognized or collected revenue [D1].",
+      "api_calls": 3
+    },
+    {
+      "name": "unsupported_policy",
+      "passed": true,
+      "text": "The knowledge base contains project methods and dataset notes, not official Amazon return or operating policies. There is no supporting policy document for this question.",
+      "api_calls": 1
+    }
+  ],
+  "api_calls": 4,
+  "deployment_status": "local_project_complete; cloud_deployment_not_prepared_or_published",
+  "automated_tests": {
+    "tests": 103,
+    "file": "reports/final_project_test_results.xml",
+    "skipped": 0,
+    "errors": 0,
+    "failures": 0
+  },
+  "browser_verification": {
+    "checks": [
+      "Title and three KPIs displayed",
+      "Chat and explorer tabs available",
+      "No visible application error"
+    ],
+    "passed": true,
+    "screenshot": "reports/screenshots_assistant/final_project_check.png",
+    "title": "E-Commerce Sales Analytics",
+    "url": "http://127.0.0.1:8501"
+  }
+}

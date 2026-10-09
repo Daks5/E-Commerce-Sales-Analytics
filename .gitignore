@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.private/
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv*/
+data/raw/
+data/processed/
+data/powerbi/
+*.sql.gz
+*.pbix
+**/.pbi/
+deployment_status.local.json

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Commerce Pulse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "452743ac-135c-5d64-8fe3-8b443bc5db45"
+  }
+}

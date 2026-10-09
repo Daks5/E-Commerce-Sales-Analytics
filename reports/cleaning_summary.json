@@ -1,0 +1,59 @@
+{
+  "source_sha256": "ac9a366da5f3af418831fa53da9eebfc3b3838803e3774eec97dbcb291441beb",
+  "raw_rows": 128975,
+  "cleaned_rows": 128975,
+  "analytical_rows": 128969,
+  "distinct_orders": 120378,
+  "flagged_duplicate_rows": 6,
+  "duplicate_recorded_amount_minor": 263500,
+  "raw_recorded_amount_minor": 7859267830,
+  "analytical_recorded_amount_minor": 7859004330,
+  "missing_amounts": 7795,
+  "zero_amounts": 2343,
+  "zero_quantities": 12807,
+  "unvalued_positive_shipped_lines": 115,
+  "orders_with_unvalued_shipped_lines": 115,
+  "state_labels_before": 69,
+  "state_labels_after": 38,
+  "geography_missing": 33,
+  "status_courier_conflicts": 93,
+  "sku_asin_conflicts": 5,
+  "date_min": "2022-03-31",
+  "date_max": "2022-06-29",
+  "month_coverage": [
+    {
+      "month": "2022-03",
+      "first_date": "2022-03-31",
+      "last_date": "2022-03-31",
+      "days": 1
+    },
+    {
+      "month": "2022-04",
+      "first_date": "2022-04-01",
+      "last_date": "2022-04-30",
+      "days": 30
+    },
+    {
+      "month": "2022-05",
+      "first_date": "2022-05-01",
+      "last_date": "2022-05-31",
+      "days": 31
+    },
+    {
+      "month": "2022-06",
+      "first_date": "2022-06-01",
+      "last_date": "2022-06-29",
+      "days": 29
+    }
+  ],
+  "dimension_rows": {
+    "dim_product": 7195,
+    "dim_geography": 14434,
+    "dim_status": 13,
+    "dim_date": 365
+  },
+  "complete_months": [
+    "2022-04",
+    "2022-05"
+  ]
+}

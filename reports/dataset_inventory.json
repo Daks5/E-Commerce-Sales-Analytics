@@ -1,0 +1,1419 @@
+[
+  {
+    "file": "Amazon Sale Report.csv",
+    "bytes": 68923428,
+    "sha256": "ac9a366da5f3af418831fa53da9eebfc3b3838803e3774eec97dbcb291441beb",
+    "encoding": "utf-8-sig",
+    "rows": 128975,
+    "column_count": 24,
+    "exact_duplicate_rows": 0,
+    "columns": [
+      {
+        "name": "index",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 128975,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "Order ID",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 120378,
+        "examples": [
+          "405-8078784-5731545",
+          "171-9198151-1101146",
+          "404-0687676-7273146"
+        ]
+      },
+      {
+        "name": "Date",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 91,
+        "examples": [
+          "04-30-22",
+          "04-29-22",
+          "04-28-22"
+        ]
+      },
+      {
+        "name": "Status",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 13,
+        "examples": [
+          "Cancelled",
+          "Shipped - Delivered to Buyer",
+          "Shipped"
+        ],
+        "value_counts": {
+          "Shipped": 77804,
+          "Shipped - Delivered to Buyer": 28769,
+          "Cancelled": 18332,
+          "Shipped - Returned to Seller": 1953,
+          "Shipped - Picked Up": 973,
+          "Pending": 658,
+          "Pending - Waiting for Pick Up": 281,
+          "Shipped - Returning to Seller": 145,
+          "Shipped - Out for Delivery": 35,
+          "Shipped - Rejected by Buyer": 11,
+          "Shipping": 8,
+          "Shipped - Lost in Transit": 5,
+          "Shipped - Damaged": 1
+        }
+      },
+      {
+        "name": "Fulfilment",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 2,
+        "examples": [
+          "Merchant",
+          "Amazon"
+        ],
+        "value_counts": {
+          "Amazon": 89698,
+          "Merchant": 39277
+        }
+      },
+      {
+        "name": "Sales Channel ",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 2,
+        "examples": [
+          "Amazon.in",
+          "Non-Amazon"
+        ],
+        "value_counts": {
+          "Amazon.in": 128851,
+          "Non-Amazon": 124
+        }
+      },
+      {
+        "name": "ship-service-level",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 2,
+        "examples": [
+          "Standard",
+          "Expedited"
+        ],
+        "value_counts": {
+          "Expedited": 88615,
+          "Standard": 40360
+        }
+      },
+      {
+        "name": "Style",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 1377,
+        "examples": [
+          "SET389",
+          "JNE3781",
+          "JNE3371"
+        ]
+      },
+      {
+        "name": "SKU",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 7195,
+        "examples": [
+          "SET389-KR-NP-S",
+          "JNE3781-KR-XXXL",
+          "JNE3371-KR-XL"
+        ]
+      },
+      {
+        "name": "Category",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 9,
+        "examples": [
+          "Set",
+          "kurta",
+          "Western Dress"
+        ],
+        "value_counts": {
+          "Set": 50284,
+          "kurta": 49877,
+          "Western Dress": 15500,
+          "Top": 10622,
+          "Ethnic Dress": 1159,
+          "Blouse": 926,
+          "Bottom": 440,
+          "Saree": 164,
+          "Dupatta": 3
+        }
+      },
+      {
+        "name": "Size",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 11,
+        "examples": [
+          "S",
+          "3XL",
+          "XL"
+        ],
+        "value_counts": {
+          "M": 22711,
+          "L": 22132,
+          "XL": 20876,
+          "XXL": 18096,
+          "S": 17090,
+          "3XL": 14816,
+          "XS": 11161,
+          "6XL": 738,
+          "5XL": 550,
+          "4XL": 427,
+          "Free": 378
+        }
+      },
+      {
+        "name": "ASIN",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 7190,
+        "examples": [
+          "B09KXVBD7Z",
+          "B09K3WFS32",
+          "B07WV4JV4D"
+        ]
+      },
+      {
+        "name": "Courier Status",
+        "inferred_dtype": "str",
+        "missing": 6872,
+        "unique": 3,
+        "examples": [
+          "Shipped",
+          "Cancelled",
+          "Unshipped"
+        ],
+        "value_counts": {
+          "Shipped": 109487,
+          "<NA>": 6872,
+          "Unshipped": 6681,
+          "Cancelled": 5935
+        }
+      },
+      {
+        "name": "Qty",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 10,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ],
+        "value_counts": {
+          "1": 115780,
+          "0": 12807,
+          "2": 341,
+          "3": 32,
+          "4": 9,
+          "5": 2,
+          "15": 1,
+          "9": 1,
+          "13": 1,
+          "8": 1
+        },
+        "numeric": {
+          "min": 0.0,
+          "max": 15.0,
+          "missing": 0,
+          "zero": 12807,
+          "negative": 0,
+          "sum": 116649.0
+        }
+      },
+      {
+        "name": "currency",
+        "inferred_dtype": "str",
+        "missing": 7795,
+        "unique": 1,
+        "examples": [
+          "INR"
+        ],
+        "value_counts": {
+          "INR": 121180,
+          "<NA>": 7795
+        }
+      },
+      {
+        "name": "Amount",
+        "inferred_dtype": "float64",
+        "missing": 7795,
+        "unique": 1410,
+        "examples": [
+          "647.62",
+          "406.0",
+          "329.0"
+        ],
+        "numeric": {
+          "min": 0.0,
+          "max": 5584.0,
+          "missing": 7795,
+          "zero": 2343,
+          "negative": 0,
+          "sum": 78592678.30000004
+        }
+      },
+      {
+        "name": "ship-city",
+        "inferred_dtype": "str",
+        "missing": 33,
+        "unique": 8955,
+        "examples": [
+          "MUMBAI",
+          "BENGALURU",
+          "NAVI MUMBAI"
+        ]
+      },
+      {
+        "name": "ship-state",
+        "inferred_dtype": "str",
+        "missing": 33,
+        "unique": 69,
+        "examples": [
+          "MAHARASHTRA",
+          "KARNATAKA",
+          "PUDUCHERRY"
+        ]
+      },
+      {
+        "name": "ship-postal-code",
+        "inferred_dtype": "float64",
+        "missing": 33,
+        "unique": 9459,
+        "examples": [
+          "400081.0",
+          "560085.0",
+          "410210.0"
+        ]
+      },
+      {
+        "name": "ship-country",
+        "inferred_dtype": "str",
+        "missing": 33,
+        "unique": 1,
+        "examples": [
+          "IN"
+        ],
+        "value_counts": {
+          "IN": 128942,
+          "<NA>": 33
+        }
+      },
+      {
+        "name": "promotion-ids",
+        "inferred_dtype": "str",
+        "missing": 49153,
+        "unique": 5787,
+        "examples": [
+          "Amazon PLCC Free-Financing Universal Merchant AAT-WNKTBO3K27EJC,Amazon PLCC Free-Financing Universal Merchant AAT-QX3UCCJESKPA2,Amazon PLCC Free-Financing Universal Merchant AAT-5QQ7BIYYQEDN2,Amazon PLCC Free-Financing Universal Merchant AAT-DSJ2QRXXWXVMQ,Amazon PLCC Free-Financing Universal Merchant AAT-CXJHMC2YJUK76,Amazon PLCC Free-Financing Universal Merchant AAT-CC4FAVTYR4X7C,Amazon PLCC Free-Financing Universal Merchant AAT-XXRCW6NZEPZI4,Amazon PLCC Free-Financing Universal Merchant AAT-CXNSLNBROFDW4,Amazon PLCC Free-Financing Universal Merchant AAT-R7GXNZWISTRFA,Amazon PLCC Free-Financing Universal Merchant AAT-WSJLDN3X7KEMO,Amazon PLCC Free-Financing Universal Merchant AAT-VL6FGQVGQVXUS,Amazon PLCC Free-Financing Universal Merchant AAT-EOKPWFWYW7Y6I,Amazon PLCC Free-Financing Universal Merchant AAT-ZYL5UPUNW6T62,Amazon PLCC Free-Financing Universal Merchant AAT-XVPICCHRWDCAI,Amazon PLCC Free-Financing Universal Merchant AAT-ETXQ3XXWMRXBG,Amazon PLCC Free-Financing Universal Merchant AAT-7X3XCTYG64VBE,Amazon PLCC Free-Financing Universal Merchant AAT-7CHGD3WTS3MHM,Amazon PLCC Free-Financing Universal Merchant AAT-26ZDKNME27X42,Amazon PLCC Free-Financing Universal Merchant AAT-4ZF5KN6E4LJK4,Amazon PLCC Free-Financing Universal Merchant AAT-7RCXIKUAX7DDY,Amazon PLCC Free-Financing Universal Merchant AAT-BRSZZ45H6MHAO,Amazon PLCC Free-Financing Universal Merchant AAT-MKLXOOZWQL7GO,Amazon PLCC Free-Financing Universal Merchant AAT-CB7UNXEXGIJTC,Amazon PLCC Free-Financing Universal Merchant #MP-gzasho-1593152694811,Amazon PLCC Free-Financing Universal Merchant AAT-WLBA4GZ52EAH4",
+          "IN Core Free Shipping 2015/04/08 23-48-5-108",
+          "Amazon PLCC Free-Financing Universal Merchant AAT-WNKTBO3K27EJC,Amazon PLCC Free-Financing Universal Merchant AAT-QX3UCCJESKPA2,Amazon PLCC Free-Financing Universal Merchant AAT-5QQ7BIYYQEDN2,Amazon PLCC Free-Financing Universal Merchant AAT-DSJ2QRXXWXVMQ,Amazon PLCC Free-Financing Universal Merchant AAT-CXJHMC2YJUK76,Amazon PLCC Free-Financing Universal Merchant AAT-CC4FAVTYR4X7C,Amazon PLCC Free-Financing Universal Merchant AAT-XXRCW6NZEPZI4,Amazon PLCC Free-Financing Universal Merchant AAT-EOKPWFWYW7Y6I,Amazon PLCC Free-Financing Universal Merchant AAT-ZYL5UPUNW6T62,Amazon PLCC Free-Financing Universal Merchant AAT-ETXQ3XXWMRXBG,Amazon PLCC Free-Financing Universal Merchant AAT-7X3XCTYG64VBE,Amazon PLCC Free-Financing Universal Merchant AAT-7CHGD3WTS3MHM,Amazon PLCC Free-Financing Universal Merchant AAT-26ZDKNME27X42,Amazon PLCC Free-Financing Universal Merchant AAT-4ZF5KN6E4LJK4,Amazon PLCC Free-Financing Universal Merchant AAT-7RCXIKUAX7DDY,Amazon PLCC Free-Financing Universal Merchant AAT-BRSZZ45H6MHAO,Amazon PLCC Free-Financing Universal Merchant AAT-MKLXOOZWQL7GO,Amazon PLCC Free-Financing Universal Merchant AAT-CB7UNXEXGIJTC,Amazon PLCC Free-Financing Universal Merchant #MP-gzasho-1593152694811,Amazon PLCC Free-Financing Universal Merchant AAT-WLBA4GZ52EAH4"
+        ]
+      },
+      {
+        "name": "B2B",
+        "inferred_dtype": "bool",
+        "missing": 0,
+        "unique": 2,
+        "examples": [
+          "False",
+          "True"
+        ],
+        "value_counts": {
+          "False": 128104,
+          "True": 871
+        }
+      },
+      {
+        "name": "fulfilled-by",
+        "inferred_dtype": "str",
+        "missing": 89698,
+        "unique": 1,
+        "examples": [
+          "Easy Ship"
+        ],
+        "value_counts": {
+          "<NA>": 89698,
+          "Easy Ship": 39277
+        }
+      },
+      {
+        "name": "Unnamed: 22",
+        "inferred_dtype": "object",
+        "missing": 49050,
+        "unique": 1,
+        "examples": [
+          "False"
+        ],
+        "value_counts": {
+          "False": 79925,
+          "<NA>": 49050
+        }
+      }
+    ]
+  },
+  {
+    "file": "Cloud Warehouse Compersion Chart.csv",
+    "bytes": 4528,
+    "sha256": "3c8e296064b7f3b98021f573c9e6777673234e67a9673ddc248995fb9fbb4c90",
+    "encoding": "utf-8-sig",
+    "rows": 50,
+    "column_count": 4,
+    "exact_duplicate_rows": 0,
+    "columns": [
+      {
+        "name": "index",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 50,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "Shiprocket",
+        "inferred_dtype": "str",
+        "missing": 29,
+        "unique": 21,
+        "examples": [
+          "Heads",
+          "Inbound (Fresh Stock and RTO)",
+          "Outbound"
+        ],
+        "value_counts": {
+          "<NA>": 29,
+          "Heads": 1,
+          "Inbound (Fresh Stock and RTO)": 1,
+          "Outbound": 1,
+          "Storage Fee/Cft": 1,
+          "Customer Return with Detailed QC": 1,
+          "(A) SCOPE OF WORK and STANDARD OPERATING PROCEDURE": 1,
+          "Inward": 1,
+          "Outward": 1,
+          "Returns": 1,
+          "Inventory management": 1,
+          "(B) MISCELLANEOUS": 1,
+          "© EXCLUSIONS": 1,
+          "(D) KEY PERFORMANCE INDICATORS AND COMMERCIALS": 1,
+          "Performance Indicators": 1,
+          "Performance Measure": 1,
+          "Monthly Fill Rate": 1,
+          "Daily Processing Capacity": 1,
+          "Customer Complaints": 1,
+          "Allowed Shrinkage": 1,
+          "Penalty": 1,
+          "Others": 1
+        }
+      },
+      {
+        "name": "Unnamed: 1",
+        "inferred_dtype": "str",
+        "missing": 9,
+        "unique": 40,
+        "examples": [
+          "Price (Per Unit)",
+          "₹4.00",
+          "₹7.00"
+        ],
+        "value_counts": {
+          "<NA>": 9,
+          "•  Measurement is monthly": 2,
+          "Price (Per Unit)": 1,
+          "₹4.00": 1,
+          "₹7.00": 1,
+          "₹25.00": 1,
+          "₹6.00": 1,
+          "Unloading": 1,
+          "Validation": 1,
+          "QC": 1,
+          "GRN": 1,
+          "Putaway": 1,
+          "Order receipt": 1,
+          "Picking": 1,
+          "Packing": 1,
+          "Invoicing": 1,
+          "Shipping": 1,
+          "POD": 1,
+          "Inward": 1,
+          "Cycle count": 1,
+          "Audit": 1,
+          "i.            Product, Vendor and Customer Master Data is created in Maven before the rollout according to the data provided by the client": 1,
+          "ii.             Above procedure considers common B2C or D2C businesses": 1,
+          "iii.             Storage for Packing material is charged separately if provided by the client. The scrap generated from the goods is for the warehouse.": 1,
+          "i.                     tax registrations for the Client and any structural changes to comply with tax requirements": 1,
+          "ii.                    coordinate with vendors of the client": 1,
+          "iii.                  provision of packaging material and consumables": 1,
+          "iv.                  any licensing required specifically for the product": 1,
+          "v.                    coordinate with transportation or delivery service providers of client": 1,
+          "vi.                  refurbishment of goods": 1,
+          "Measurement": 1,
+          "•  Calculated as: Total quantity available in Maven & dispatched/Total quantity ordered": 1,
+          "•  GRN throughput is subject to a cut-off of 11:00am": 1,
+          "•  Outbound throughput is subject to a cut-off of 2:00pm": 1,
+          "•  Returns throughput is subject to a cut-off of 10:00am": 1,
+          "•  Total affected quantity (Short reported, excess reported and mismatch reported)/ Total quantity ordered during the month": 1,
+          "•  Measured at the time of full audit carried out against Maven inventory by Client or any third party appointed by the Client": 1,
+          "•  Final Shrinkage value calculated at Client’s holding cost of the inventory (net of any excess inventory found) Net value of transacted goods (excess – shortage) during the audit period measured at holding cost": 1,
+          "•  Penalty for fillrate": 1,
+          "•  Penalty cap for service lapse": 1,
+          "•  Days of Operations": 1
+        }
+      },
+      {
+        "name": "INCREFF",
+        "inferred_dtype": "str",
+        "missing": 22,
+        "unique": 27,
+        "examples": [
+          "Price (Per Unit)",
+          "4",
+          "11"
+        ],
+        "value_counts": {
+          "<NA>": 22,
+          "<0.2%": 2,
+          "Price (Per Unit)": 1,
+          "4": 1,
+          "11": 1,
+          "Rs 0.15/- Per Day": 1,
+          "15.5": 1,
+          "• Boxes counted and weighed. Data captured in the Maven.": 1,
+          "• GRN will be initiated against a valid PO document and Invoice will be captured": 1,
+          "• No QC to be done (Outer Visual Inspection and Color matching)": 1,
+          "•  Scanning (Goods will have scannable EAN code or unique barcodes) and counting of all inventory, verification of all data by supervisor and completion of GRN. Detailed report is made available": 1,
+          "• Mobile HHT based Putaway to accurately record warehouse location for every item/roll": 1,
+          "•  Orders will be received through integration directly into Maven or directly to Maven by the client": 1,
+          "• System driven optimised picking with real-time inventory correction by marking Not Found and alternate locations suggested": 1,
+          "• System driven packing by putting products into Polybags to maintain accuracy and generate pack slips": 1,
+          "• Print the invoice as generated through integration or provided by the client": 1,
+          "• Shipping labels and AWB via integration with vendors and generation of digital manifests to ensure accuracy": 1,
+          "• Digital PODs from vendors if available via integration": 1,
+          "•  RTO and Customer Returns are received and Inwarded in the warehouse Outer package visible inspection is done before inwarding": 1,
+          "•  Daily cycle count to maintain accuracy and deliver SLAs without disrupting regular operations. Complete Inventory to be covered in 3 months.": 1,
+          "•  Any quantity not found during Cycle Count shall be parked in a non-serviceable location in Maven": 1,
+          "• Annual wall to wall Audit including global count driven by system to ensure speed while eliminating human error": 1,
+          "Target": 1,
+          ">99.8%": 1,
+          "1 Annual Audit is included in the commercials": 1,
+          "2x of the service fee per affected qty": 1,
+          "10% of monthly billing; not applicable if there are outstanding payments; no cap on shrinkage": 1,
+          "7 days per week": 1
+        }
+      }
+    ]
+  },
+  {
+    "file": "Expense IIGF.csv",
+    "bytes": 496,
+    "sha256": "b1fa321a3aa963d91d06fc032a83848baec491cf13f9abd3ffbe75c6770c70db",
+    "encoding": "utf-8-sig",
+    "rows": 17,
+    "column_count": 5,
+    "exact_duplicate_rows": 0,
+    "columns": [
+      {
+        "name": "index",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 17,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ],
+        "value_counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "12": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "16": 1
+        }
+      },
+      {
+        "name": "Recived Amount",
+        "inferred_dtype": "str",
+        "missing": 11,
+        "unique": 6,
+        "examples": [
+          "Particular",
+          "06-19-22",
+          "06-20-22"
+        ],
+        "value_counts": {
+          "<NA>": 11,
+          "Particular": 1,
+          "06-19-22": 1,
+          "06-20-22": 1,
+          "06-22-22": 1,
+          "06-23-22": 1,
+          "Total": 1
+        }
+      },
+      {
+        "name": "Unnamed: 1",
+        "inferred_dtype": "str",
+        "missing": 11,
+        "unique": 6,
+        "examples": [
+          "Amount",
+          "1000",
+          "1500"
+        ],
+        "value_counts": {
+          "<NA>": 11,
+          "Amount": 1,
+          "1000": 1,
+          "1500": 1,
+          "500": 1,
+          "2000": 1,
+          "5000": 1
+        }
+      },
+      {
+        "name": "Expance",
+        "inferred_dtype": "str",
+        "missing": 2,
+        "unique": 15,
+        "examples": [
+          "Particular",
+          "Large Bag",
+          "Stationary(Soft Pin, Paper pin for Dupatta, Fevikwick)"
+        ],
+        "value_counts": {
+          "<NA>": 2,
+          "Particular": 1,
+          "Large Bag": 1,
+          "Stationary(Soft Pin, Paper pin for Dupatta, Fevikwick)": 1,
+          "OLA": 1,
+          "Auto Rent": 1,
+          "TT Fine": 1,
+          "Bhushan Hotel": 1,
+          "Food": 1,
+          "Expomart Labour Charge": 1,
+          "Choclate": 1,
+          "Bhushan Cash": 1,
+          "Delhi Hotel Rest Room": 1,
+          "Water Bottel": 1,
+          "Cooli": 1,
+          "Pending Amount": 1
+        }
+      },
+      {
+        "name": "Unnamed: 3",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 17,
+        "examples": [
+          "Amount",
+          "380",
+          "170"
+        ],
+        "value_counts": {
+          "Amount": 1,
+          "380": 1,
+          "170": 1,
+          "839": 1,
+          "520": 1,
+          "500": 1,
+          "2506": 1,
+          "1290": 1,
+          "200": 1,
+          "400": 1,
+          "800": 1,
+          "120": 1,
+          "70": 1,
+          "300": 1,
+          "8095": 1,
+          "-3095": 1,
+          "5000": 1
+        }
+      }
+    ]
+  },
+  {
+    "file": "International sale Report.csv",
+    "bytes": 3112676,
+    "sha256": "b0497693c317f456311f406a3a7d1cb15d38949143a50b6b15ab5c50c6e2baaf",
+    "encoding": "utf-8-sig",
+    "rows": 37432,
+    "column_count": 10,
+    "exact_duplicate_rows": 0,
+    "columns": [
+      {
+        "name": "index",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 37432,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "DATE",
+        "inferred_dtype": "str",
+        "missing": 1,
+        "unique": 1325,
+        "examples": [
+          "06-05-21",
+          "06-08-21",
+          "06-11-21"
+        ]
+      },
+      {
+        "name": "Months",
+        "inferred_dtype": "str",
+        "missing": 25,
+        "unique": 571,
+        "examples": [
+          "Jun-21",
+          "Jul-21",
+          "Aug-21"
+        ]
+      },
+      {
+        "name": "CUSTOMER",
+        "inferred_dtype": "str",
+        "missing": 1040,
+        "unique": 168,
+        "examples": [
+          "REVATHY LOGANATHAN",
+          "FARIA ESSOPP",
+          "MANGALAM SHOP"
+        ]
+      },
+      {
+        "name": "Style",
+        "inferred_dtype": "str",
+        "missing": 1040,
+        "unique": 1065,
+        "examples": [
+          "MEN5004",
+          "MEN5009",
+          "MEN5011"
+        ]
+      },
+      {
+        "name": "SKU",
+        "inferred_dtype": "str",
+        "missing": 2474,
+        "unique": 4598,
+        "examples": [
+          "MEN5004-KR-L",
+          "MEN5004-KR-XL",
+          "MEN5004-KR-XXL"
+        ]
+      },
+      {
+        "name": "Size",
+        "inferred_dtype": "str",
+        "missing": 1040,
+        "unique": 36,
+        "examples": [
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "value_counts": {
+          "1.00": 15300,
+          "L": 3638,
+          "M": 3360,
+          "XL": 3256,
+          "XXL": 2684,
+          "S": 2555,
+          "XXXL": 1653,
+          "2.00": 1351,
+          "<NA>": 1040,
+          "XS": 879,
+          "3.00": 453,
+          "Free": 241,
+          "5.00": 191,
+          "4.00": 188,
+          "6.00": 176,
+          "5XL": 117,
+          "6XL": 109,
+          "4XL": 100,
+          "8.00": 63,
+          "7.00": 12,
+          "S TO XXL": 9,
+          "FREE": 8,
+          "10.00": 8,
+          "s": 6,
+          "15.00": 5,
+          "m": 4,
+          "l": 4,
+          "xl": 4,
+          "xxl": 4,
+          "xxxl": 4,
+          "9.00": 3,
+          "12.00": 2,
+          "PCS": 1,
+          "1000.00": 1,
+          "600.00": 1,
+          "11.00": 1,
+          "698.00": 1
+        }
+      },
+      {
+        "name": "PCS",
+        "inferred_dtype": "str",
+        "missing": 1040,
+        "unique": 658,
+        "examples": [
+          "1.00",
+          "2.00",
+          "6.00"
+        ]
+      },
+      {
+        "name": "RATE",
+        "inferred_dtype": "str",
+        "missing": 1040,
+        "unique": 1339,
+        "examples": [
+          "616.56",
+          "649.03",
+          "324.35"
+        ],
+        "numeric": {
+          "min": 100.0,
+          "max": 57400.0,
+          "missing": 1041,
+          "zero": 0,
+          "negative": 0,
+          "sum": 30217023.94
+        }
+      },
+      {
+        "name": "GROSS AMT",
+        "inferred_dtype": "str",
+        "missing": 1040,
+        "unique": 1208,
+        "examples": [
+          "617.00",
+          "649.00",
+          "324.00"
+        ],
+        "numeric": {
+          "min": 0.0,
+          "max": 9745.0,
+          "missing": 1041,
+          "zero": 2080,
+          "negative": 0,
+          "sum": 16395599.19
+        }
+      }
+    ]
+  },
+  {
+    "file": "May-2022.csv",
+    "bytes": 126617,
+    "sha256": "f24628666e406e96515a5beeb8cfc6e4f2350594217800b67f3613e0d98c32a7",
+    "encoding": "utf-8-sig",
+    "rows": 1330,
+    "column_count": 17,
+    "exact_duplicate_rows": 0,
+    "columns": [
+      {
+        "name": "index",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 1330,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "Sku",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 1330,
+        "examples": [
+          "Os206_3141_S",
+          "Os206_3141_M",
+          "Os206_3141_L"
+        ]
+      },
+      {
+        "name": "Style Id",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 254,
+        "examples": [
+          "Os206_3141",
+          "Os223_3142",
+          "Os212_3143"
+        ]
+      },
+      {
+        "name": "Catalog",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 9,
+        "examples": [
+          "Moments",
+          "Colors-8",
+          "Breeze-4"
+        ],
+        "value_counts": {
+          "Mix": 830,
+          "Surmaya": 192,
+          "Nill": 73,
+          "Colors-8": 48,
+          "Rozana": 48,
+          "Colors-7": 43,
+          "Moments": 36,
+          "Breeze-4": 36,
+          "Four Gems 2": 24
+        }
+      },
+      {
+        "name": "Category",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 5,
+        "examples": [
+          "Kurta",
+          "Kurta Set",
+          "Gown"
+        ],
+        "value_counts": {
+          "Kurta": 820,
+          "Kurta Set": 360,
+          "Nill": 73,
+          "Tops": 45,
+          "Gown": 32
+        }
+      },
+      {
+        "name": "Weight",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 4,
+        "examples": [
+          "0.3",
+          "0.4",
+          "0.2"
+        ],
+        "value_counts": {
+          "0.3": 820,
+          "0.4": 392,
+          "Nill": 73,
+          "0.2": 45
+        }
+      },
+      {
+        "name": "TP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 93,
+        "examples": [
+          "538",
+          "438",
+          "505"
+        ]
+      },
+      {
+        "name": "MRP Old",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 67,
+        "examples": [
+          "2178",
+          "1778",
+          "1895"
+        ]
+      },
+      {
+        "name": "Final MRP Old",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 53,
+        "examples": [
+          "2295",
+          "1895",
+          "254"
+        ]
+      },
+      {
+        "name": "Ajio MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Amazon MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 53,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Amazon FBA MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 53,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Flipkart MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Limeroad MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Myntra MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 51,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Paytm MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Snapdeal MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "P  L March 2021.csv",
+    "bytes": 135938,
+    "sha256": "978679bb9d41e4b8a96dc5c65b0e0bae4b65546fa8a2f5f60457a93491811298",
+    "encoding": "utf-8-sig",
+    "rows": 1330,
+    "column_count": 18,
+    "exact_duplicate_rows": 0,
+    "columns": [
+      {
+        "name": "index",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 1330,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "Sku",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 1330,
+        "examples": [
+          "Os206_3141_S",
+          "Os206_3141_M",
+          "Os206_3141_L"
+        ]
+      },
+      {
+        "name": "Style Id",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 254,
+        "examples": [
+          "Os206_3141",
+          "Os223_3142",
+          "Os212_3143"
+        ]
+      },
+      {
+        "name": "Catalog",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 9,
+        "examples": [
+          "Moments",
+          "Colors-8",
+          "Breeze-4"
+        ],
+        "value_counts": {
+          "Mix": 830,
+          "Surmaya": 192,
+          "Nill": 73,
+          "Colors-8": 48,
+          "Rozana": 48,
+          "Colors-7": 43,
+          "Moments": 36,
+          "Breeze-4": 36,
+          "Four Gems 2": 24
+        }
+      },
+      {
+        "name": "Category",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 5,
+        "examples": [
+          "Kurta",
+          "Kurta Set",
+          "Gown"
+        ],
+        "value_counts": {
+          "Kurta": 820,
+          "Kurta Set": 360,
+          "Nill": 73,
+          "Tops": 45,
+          "Gown": 32
+        }
+      },
+      {
+        "name": "Weight",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 4,
+        "examples": [
+          "0.3",
+          "0.4",
+          "0.2"
+        ],
+        "value_counts": {
+          "0.3": 820,
+          "0.4": 392,
+          "Nill": 73,
+          "0.2": 45
+        }
+      },
+      {
+        "name": "TP 1",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 93,
+        "examples": [
+          "538",
+          "438",
+          "505"
+        ]
+      },
+      {
+        "name": "TP 2",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 93,
+        "examples": [
+          "435.78",
+          "354.78",
+          "409.05"
+        ]
+      },
+      {
+        "name": "MRP Old",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 67,
+        "examples": [
+          "2178",
+          "1778",
+          "1895"
+        ]
+      },
+      {
+        "name": "Final MRP Old",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 53,
+        "examples": [
+          "2295",
+          "1895",
+          "254"
+        ]
+      },
+      {
+        "name": "Ajio MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Amazon MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 53,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Amazon FBA MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 53,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Flipkart MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Limeroad MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Myntra MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 51,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Paytm MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      },
+      {
+        "name": "Snapdeal MRP",
+        "inferred_dtype": "str",
+        "missing": 0,
+        "unique": 52,
+        "examples": [
+          "2295",
+          "1895",
+          "2195"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "Sale Report.csv",
+    "bytes": 433643,
+    "sha256": "60320c9831d0194c52ce5791f03f9c4f12e3474490a931d7cd23282290a28e6d",
+    "encoding": "utf-8-sig",
+    "rows": 9271,
+    "column_count": 7,
+    "exact_duplicate_rows": 0,
+    "columns": [
+      {
+        "name": "index",
+        "inferred_dtype": "int64",
+        "missing": 0,
+        "unique": 9271,
+        "examples": [
+          "0",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "name": "SKU Code",
+        "inferred_dtype": "str",
+        "missing": 83,
+        "unique": 9170,
+        "examples": [
+          "AN201-RED-L",
+          "AN201-RED-M",
+          "AN201-RED-S"
+        ]
+      },
+      {
+        "name": "Design No.",
+        "inferred_dtype": "str",
+        "missing": 36,
+        "unique": 1594,
+        "examples": [
+          "AN201",
+          "AN202",
+          "AN203"
+        ]
+      },
+      {
+        "name": "Stock",
+        "inferred_dtype": "float64",
+        "missing": 36,
+        "unique": 295,
+        "examples": [
+          "5.0",
+          "3.0",
+          "6.0"
+        ]
+      },
+      {
+        "name": "Category",
+        "inferred_dtype": "str",
+        "missing": 45,
+        "unique": 21,
+        "examples": [
+          "AN : LEGGINGS",
+          "BLOUSE",
+          "PANT"
+        ],
+        "value_counts": {
+          "KURTA": 3726,
+          "KURTA SET": 1598,
+          "SET": 1050,
+          "TOP": 865,
+          "DRESS": 700,
+          "BLOUSE": 241,
+          "NIGHT WEAR": 217,
+          "TUNIC": 154,
+          "SAREE": 147,
+          "AN : LEGGINGS": 131,
+          "PANT": 91,
+          "PALAZZO": 91,
+          "<NA>": 45,
+          "CROP TOP": 42,
+          "SHARARA": 40,
+          "LEHENGA CHOLI": 35,
+          "KURTI": 28,
+          "SKIRT": 20,
+          "BOTTOM": 19,
+          "CARDIGAN": 17,
+          "JUMPSUIT": 7,
+          "CROP TOP WITH PLAZZO": 7
+        }
+      },
+      {
+        "name": "Size",
+        "inferred_dtype": "str",
+        "missing": 36,
+        "unique": 11,
+        "examples": [
+          "L",
+          "M",
+          "S"
+        ],
+        "value_counts": {
+          "S": 1353,
+          "M": 1342,
+          "XL": 1340,
+          "XXL": 1338,
+          "L": 1335,
+          "XS": 1115,
+          "XXXL": 1077,
+          "FREE": 223,
+          "5XL": 40,
+          "6XL": 38,
+          "<NA>": 36,
+          "4XL": 34
+        }
+      },
+      {
+        "name": "Color",
+        "inferred_dtype": "str",
+        "missing": 45,
+        "unique": 60,
+        "examples": [
+          "Red",
+          "Orange",
+          "Maroon"
+        ]
+      }
+    ]
+  }
+]

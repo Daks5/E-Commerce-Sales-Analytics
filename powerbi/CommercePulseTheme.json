@@ -1,0 +1,58 @@
+{
+  "name": "Commerce Pulse • Midnight",
+  "dataColors": [
+    "#3DE2C4",
+    "#F6BD60",
+    "#FF708B",
+    "#7F9CFF",
+    "#59B8DF",
+    "#B29CE8"
+  ],
+  "background": "#14243A",
+  "foreground": "#F3F7FC",
+  "tableAccent": "#3DE2C4",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#F3F7FC"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#9CADC5"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 32,
+      "color": "#F3F7FC"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#14243A"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    }
+  }
+}
