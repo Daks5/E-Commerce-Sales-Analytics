@@ -54,11 +54,11 @@ completed `.streamlit/secrets.example.toml` through its secrets manager.
 The remote database must use the provider's CA certificate and a SELECT-only
 reader. TLS issuer and hostname verification are required in cloud mode.
 
-Query Explorer is public. Gemini needs a random demo access code of at least
-12 characters, plus a configured API key. There are browser-session and shared
+Query Explorer and Gemini chat are public. Gemini needs a configured API key.
+There are browser-session and shared
 process hourly allowances; the latter resets when the application restarts.
 These are demo usage controls, not provider billing limits. Configure provider
-quotas separately and share the access code only with intended reviewers.
+quotas separately.
 
 ## Validation and delivery status
 

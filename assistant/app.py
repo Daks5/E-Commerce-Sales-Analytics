@@ -1,6 +1,5 @@
 """E-Commerce Sales Analytics: local chat and audited SQL exploration."""
 from datetime import date
-import hashlib
 import sys
 from pathlib import Path
 
@@ -12,7 +11,7 @@ from assistant.config import ROOT, Settings
 from assistant.gemini import AssistantError, GeminiAssistant
 from assistant.queries import TITLES, QueryService, QuerySpec
 from assistant.rag import DocumentRetriever, RetrievalError, SOURCES
-from assistant.usage import BudgetExhausted, ProcessBudget, valid_access_code
+from assistant.usage import BudgetExhausted, ProcessBudget
 
 st.set_page_config(page_title='E-Commerce Sales Analytics', page_icon='📊', layout='wide', initial_sidebar_state='collapsed')
 st.markdown('''<style>
@@ -154,25 +153,6 @@ def update_usage_counter():
 
 update_usage_counter()
 with chat:
-    access_allowed = not settings.cloud_mode
-    if settings.cloud_mode:
-        fingerprint = hashlib.sha256(settings.demo_access_code.encode()).hexdigest()
-        access_allowed = bool(len(settings.demo_access_code) >= 12 and
-                              st.session_state.get('demo_access_grant') == fingerprint)
-        if not access_allowed:
-            if len(settings.demo_access_code) < 12:
-                st.info('Gemini demo access is not enabled. Query Explorer and Metric Guide are available.')
-            else:
-                with st.form('demo_access'):
-                    access_code = st.text_input('Demo access code', type='password')
-                    unlock = st.form_submit_button('Unlock AI questions')
-                st.caption('Ask the project author for demo access. Query Explorer is open to everyone.')
-                if unlock:
-                    if valid_access_code(access_code, settings.demo_access_code):
-                        st.session_state['demo_access_grant'] = fingerprint
-                        st.rerun()
-                    else:
-                        st.error('The demo access code is incorrect.')
     if not settings.gemini_ready:
         st.info('Gemini is not configured. Query Explorer works without an API key.')
     st.caption('Try: “Compare May and June on the same days”, “How were duplicates handled?”, or “Show Kurta sales in Maharashtra and explain how sales are defined.”')
@@ -188,8 +168,8 @@ with chat:
             searches = 'document search' if retrieval_calls == 1 else 'document searches'
             st.caption(f'{answer.api_calls} API requests ({retrieval_calls} {searches}) · {answer.input_tokens:,} input / {answer.output_tokens:,} output LLM tokens')
     question = st.chat_input('Ask about this sales snapshot…', max_chars=2000,
-        disabled=not access_allowed or not settings.gemini_ready or st.session_state.api_calls >= settings.max_requests)
-    if question and access_allowed:
+        disabled=not settings.gemini_ready or st.session_state.api_calls >= settings.max_requests)
+    if question:
         with st.chat_message('user'):
             st.write(question)
         lease, used = None, None

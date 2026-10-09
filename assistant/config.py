@@ -20,7 +20,6 @@ class Settings:
     embedding_model: str = 'gemini-embedding-001'
     cloud_mode: bool = False
     ssl_ca: str = field(repr=False, default='')
-    demo_access_code: str = field(repr=False, default='')
     shared_hourly_requests: int = 30
 
     @classmethod
@@ -45,7 +44,7 @@ class Settings:
             max_requests=max(1, min(int(get('ASSISTANT_MAX_REQUESTS', '30')), 100)),
             embedding_model=get('GEMINI_EMBEDDING_MODEL', 'gemini-embedding-001'),
             cloud_mode=get('DEPLOYMENT_MODE', 'cloud').lower() == 'cloud',
-            ssl_ca=get('MYSQL_SSL_CA'), demo_access_code=get('DEMO_ACCESS_CODE'),
+            ssl_ca=get('MYSQL_SSL_CA'),
             shared_hourly_requests=max(1, min(int(get('SHARED_HOURLY_REQUESTS', '30')), 100)),
         )
 

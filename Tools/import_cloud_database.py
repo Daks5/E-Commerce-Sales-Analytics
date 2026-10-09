@@ -61,7 +61,7 @@ def main():
                       MYSQL_ASSISTANT_PASSWORD=reader_password, MYSQL_SSL_CA=connection['ca'],
                       GEMINI_API_KEY=dotenv_values(args.gemini_env)['GEMINI_API_KEY'],
                       GEMINI_MODEL='gemini-3.5-flash-lite', GEMINI_EMBEDDING_MODEL='gemini-embedding-001',
-                      DEMO_ACCESS_CODE=secrets.token_urlsafe(24), ASSISTANT_MAX_REQUESTS='30', SHARED_HOURLY_REQUESTS='30')
+                      ASSISTANT_MAX_REQUESTS='30', SHARED_HOURLY_REQUESTS='30')
         # Save the generated credential before CREATE USER so a partial run does
         # not strand it. This file is never committed or printed.
         (PRIVATE / 'streamlit_secrets.toml').write_text(toml.dumps(reader), encoding='utf-8')

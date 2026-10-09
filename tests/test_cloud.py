@@ -4,7 +4,7 @@ import ssl
 from unittest.mock import patch
 import pytest
 from assistant.config import Settings
-from assistant.usage import BudgetExhausted, ProcessBudget, valid_access_code
+from assistant.usage import BudgetExhausted, ProcessBudget
 
 
 def test_cloud_tls_fails_closed_and_verifies_hostname():
@@ -51,26 +51,21 @@ def test_budget_refunds_known_requests_once_and_handles_hour_rollover():
         budget.reserve()
 
 
-def test_access_requires_configured_long_code_and_exact_match():
-    assert not valid_access_code('', '')
-    assert not valid_access_code('short', 'short')
-    assert not valid_access_code('wrong', 'correct-long-random-code')
-    assert valid_access_code('correct-long-random-code', 'correct-long-random-code')
-
-
-def test_cloud_app_keeps_explorer_public_and_chat_locked_until_code(monkeypatch):
+def test_cloud_app_chat_is_public_and_keeps_usage_limits(monkeypatch):
     from streamlit.testing.v1 import AppTest
     from assistant.config import ROOT
     from assistant.queries import QueryService
     from assistant.gemini import Answer, GeminiAssistant
-    local = Settings.load()
-    cloud = replace(local, cloud_mode=True, demo_access_code='random-demo-code-12345',
-                    api_key='test-only-key', shared_hourly_requests=97)
+    cloud = Settings('cloud.example', 3306, 'db', 'reader', 'secret',
+                     cloud_mode=True, api_key='test-only-key',
+                     shared_hourly_requests=97, max_requests=2)
     monkeypatch.setattr(Settings, 'load', classmethod(lambda cls: cloud))
-    original_init = QueryService.__init__
-    # Only the test substitutes the existing loopback database for cloud MySQL.
-    monkeypatch.setattr(QueryService, '__init__',
-        lambda self, settings: original_init(self, replace(settings, cloud_mode=False, ssl_ca='')))
+    # Test the UI without a database connection or Gemini request.
+    monkeypatch.setattr(QueryService, '__init__', lambda self, settings:
+        setattr(self, 'catalog', {'categories': ['Kurta'], 'states': ['MAHARASHTRA']}))
+    monkeypatch.setattr(QueryService, 'execute', lambda self, spec:
+        {'rows': [{'shipped_sales_value': 69660658,
+                   'valued_shipped_orders': 100227, 'cancelled_line_pct': 14.21}]})
     calls = []
     def fake_ask(self, question, context=None, request_budget=4):
         calls.append(request_budget)
@@ -78,16 +73,18 @@ def test_cloud_app_keeps_explorer_public_and_chat_locked_until_code(monkeypatch)
     monkeypatch.setattr(GeminiAssistant, 'ask', fake_ask)
     ui = AppTest.from_file(str(ROOT / 'assistant/app.py'), default_timeout=45).run()
     assert not ui.exception
-    assert ui.chat_input[0].disabled
-    assert len(ui.selectbox) == 5  # Public explorer controls remain present.
-    ui.text_input[0].set_value('wrong')
-    ui.button(key='FormSubmitter:demo_access-Unlock AI questions').click().run()
-    assert ui.chat_input[0].disabled
-    assert calls == []
-    ui.text_input[0].set_value('random-demo-code-12345')
-    ui.button(key='FormSubmitter:demo_access-Unlock AI questions').click().run()
     assert not ui.chat_input[0].disabled
+    assert len(ui.selectbox) == 5  # Public explorer controls remain present.
+    assert len(ui.text_input) == 0  # No access-code form.
+    assert all(button.label != 'Unlock AI questions' for button in ui.button)
+    assert calls == []
     ui.chat_input[0].set_value('Explain missing amounts').run()
     assert not ui.exception
-    assert calls == [4]
+    assert calls == [2]
     assert ui.session_state['api_calls'] == 2
+    assert ui.chat_input[0].disabled  # Existing session allowance still applies.
+    monkeypatch.setattr(Settings, 'load', classmethod(lambda cls: replace(cloud, api_key='')))
+    ui.run()
+    assert not ui.exception
+    assert any('Gemini is not configured' in info.value for info in ui.info)
+    assert ui.chat_input[0].disabled

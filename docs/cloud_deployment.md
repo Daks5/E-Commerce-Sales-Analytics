@@ -23,8 +23,7 @@ environments, database dumps or `.streamlit/secrets.toml` to GitHub.
 5. In Streamlit Community Cloud, choose the repository, `main` branch and
    `assistant/app.py`; choose Python 3.13. Complete the example TOML and put it
    in **Advanced settings → Secrets**. `MYSQL_SSL_CA` is the provider's PEM
-   certificate contents. Use a new random `DEMO_ACCESS_CODE` of at least 12
-   characters, not a MySQL password or API key.
+   certificate contents.
 6. Deploy and verify the live URL. Keep the Gemini key and database password
    out of source, logs and screenshots. Only the read-only credential belongs
    in Streamlit's secrets; the admin credential stays private.
@@ -33,8 +32,9 @@ environments, database dumps or `.streamlit/secrets.toml` to GitHub.
 
 - Title and three KPI cards display: ₹6.97 crore shipped value, 100,227 valued
   shipped orders, and 14.21% cancelled lines for the full snapshot.
-- Query Explorer works without an access code or Gemini request.
-- Gemini chat is disabled until the correct demo code is supplied.
+- Query Explorer works without a Gemini request.
+- Gemini chat is available directly when its API key is configured and the
+  session allowance remains available.
 - “Show Kurta sales in Maharashtra and explain how sales are defined” produces
   SQL evidence and relevant document citations. Expected category value is
   ₹3,198,039; a top-SKU subset must not be presented as the category total.

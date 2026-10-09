@@ -5,14 +5,8 @@ are returned only after known completion; unexpected failures consume the full
 reservation. This allowance resets on process restart; it is not a billing cap.
 """
 from dataclasses import dataclass
-import hmac
 import threading
 import time
-
-
-def valid_access_code(candidate, expected):
-    return bool(expected and len(expected) >= 12) and hmac.compare_digest(
-        str(candidate).encode(), expected.encode())
 
 
 class BudgetExhausted(Exception):
