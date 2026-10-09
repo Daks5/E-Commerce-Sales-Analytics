@@ -7,3 +7,5 @@ pandas==3.0.6
 plotly==7.1.0
 python-dotenv==1.2.4
 pydantic==2.13.5
+# Match the working Community Cloud runtime's Arrow compatibility override.
+pyarrow==24.0.0
